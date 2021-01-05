@@ -1,6 +1,6 @@
 const enUS = {
   home: {
-    description: 'A backend-free blog system built on top of Vue.js',
+    description: 'vlog everyday',
     download: 'Download v{0}',
     github: 'GitHub'
   },
@@ -39,7 +39,7 @@ const enUS = {
   },
 
   lang: {
-    switch: 'Language:'
+    switch: 'Language'
   }
 }
 

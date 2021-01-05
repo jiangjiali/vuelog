@@ -4,8 +4,8 @@ window.Vuelog = {
     config: {
       // The name of your site, will be displayed in browser tab and site header.
       brand: {
-        'en-US': 'Vuelog',
-        'zh-CN': 'Vuelog'
+        'en-US': 'Know It',
+        'zh-CN': '知之简史'
       },
 
       // Put the site brand behind current page in `document.title`.
@@ -50,14 +50,6 @@ window.Vuelog = {
     navigation: [
       {
         label: {
-          'en-US': 'Guide',
-          'zh-CN': '指南'
-        },
-        type: 'page',
-        path: '/page/guide'
-      },
-      {
-        label: {
           'en-US': 'About',
           'zh-CN': '关于'
         },
@@ -66,173 +58,253 @@ window.Vuelog = {
       },
       {
         label: {
-          'en-US': 'Showcase',
-          'zh-CN': '示例'
-        },
-        type: 'category',
-        path: '/blog/showcase'
-      },
-      {
-        label: {
-          'en-US': 'Archive',
-          'zh-CN': '归档'
+          'en-US': 'Blog',
+          'zh-CN': '博客'
         },
         type: 'archive',
         path: '/archive'
-      },
-      {
-        label: {
-          'en-US': 'Links',
-          'zh-CN': '链接'
-        },
-        type: 'dropdown',
-        path: '', // (OPTIONAL) dropdown can be routable too if you set a valid route path
-        children: [
-          {
-            label: { 'en-US': 'Weibo', 'zh-CN': '微博' },
-            type: 'outgoing',
-            link: 'https://weibo.com/myst729'
-          },
-          {
-            label: 'GitHub',
-            type: 'outgoing',
-            link: 'https://github.com/myst729'
-          }
-        ]
       }
     ],
 
     pages: [
       {
         title: {
-          'en-US': 'Vuelog Guide',
-          'zh-CN': 'Vuelog 指南'
+          'en-US': 'About',
+          'zh-CN': '关于'
         },
-        slug: 'guide',
+        slug: 'about',
         exclude: true, // (OPTIONAL) `true` to exclude the page from archive view
         titleless: false, // (OPTIONAL) `true` to hide the title in page view
         commentless: false, // (OPTIONAL) `true` to disable comments for the page
         draft: false // (OPTIONAL) `true` to make the page temporarily inaccessible
-      },
-      {
-        title: {
-          'en-US': 'About Vuelog',
-          'zh-CN': '关于 Vuelog'
-        },
-        slug: 'about'
-      },
-      {
-        title: {
-          'en-US': 'Changelog',
-          'zh-CN': '变更日志'
-        },
-        slug: 'changelog'
       }
     ],
 
     categories: [
       {
         title: {
-          'en-US': 'Documentation',
-          'zh-CN': '文档'
+          'en-US': 'Family',
+          'zh-CN': '家族管理'
         },
-        slug: 'docs'
+        slug: 'familymanagement'
       },
       {
         title: {
-          'en-US': 'Showcase',
-          'zh-CN': '示例'
+          'en-US': 'Finance',
+          'zh-CN': '金融学'
         },
-        slug: 'showcase'
+        slug: 'finance'
+      },
+      {
+        title: {
+          'en-US': 'Book',
+          'zh-CN': '书籍阅读'
+        },
+        slug: 'bookreading'
+      },
+      {
+        title: {
+          'en-US': 'Wiki',
+          'zh-CN': '学习百科'
+        },
+        slug: 'wiki'
       }
     ],
 
     posts: [
-      /* 2017 */
       {
         title: {
-          'en-US': 'Multiple languages support',
-          'zh-CN': '多语言支持'
+          'en-US': 'Family Key Management',
+          'zh-CN': '家族钥匙管理'
         },
-        slug: 'multiple-languages-support',
-        category: 'docs',
-        date: '2017-01-24'
+        slug: '家族钥匙管理',
+        category: 'familymanagement',
+        date: '2020-01-24',
+        titleless: false,   // (OPTIONAL) `true` to hide the title in page view
+        commentless: false, // (OPTIONAL) `true` to disable comments for the page
+        draft: false        // (OPTIONAL) `true` to make the page temporarily inaccessible
       },
       {
         title: {
-          'en-US': 'Use social commenting services',
-          'zh-CN': '使用社会化评论服务'
+          'en-US': 'KV SecretEngine Version1',
+          'zh-CN': 'KV机密引擎 - 版本1'
         },
-        slug: 'use-social-commenting-services',
-        category: 'docs',
-        date: '2017-01-19',
-        draft: true
+        slug: 'KV机密引擎-版本1',
+        category: 'familymanagement',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
       },
       {
         title: {
-          'en-US': 'Insert code blocks with syntax highlight',
-          'zh-CN': '插入语法高亮的代码块'
+          'en-US': 'KV SecretEngine Version2',
+          'zh-CN': 'KV机密引擎 - 版本2'
         },
-        slug: 'insert-code-blocks-with-syntax-highlight',
-        category: 'docs',
-        date: '2017-01-18'
+        slug: 'KV机密引擎-版本2',
+        category: 'familymanagement',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
       },
       {
         title: {
-          'en-US': 'Author posts or pages',
-          'zh-CN': '编写文章或页面'
+          'en-US': 'KV SecretEngine',
+          'zh-CN': 'KV机密引擎'
         },
-        slug: 'author-posts-or-pages',
-        category: 'docs',
-        date: '2017-01-13'
+        slug: 'KV机密引擎',
+        category: 'familymanagement',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'TOTP Secret Engine',
+          'zh-CN': 'TOTP机密引擎'
+        },
+        slug: 'TOTP机密引擎',
+        category: 'familymanagement',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Transit Secret Engine',
+          'zh-CN': 'Transit机密引擎'
+        },
+        slug: 'transit-secret-engine',
+        category: 'familymanagement',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Userpass Authentication Method',
+          'zh-CN': 'UserPass 身份验证方法'
+        },
+        slug: 'UserPass身份验证方法',
+        category: 'familymanagement',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'English Sayings - Collection Edition',
+          'zh-CN': '英语名言 - 收藏版'
+        },
+        slug: '英语名言-收藏版',
+        category: 'wiki',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': '18 Things 33 Taught Me',
+          'zh-CN': '33岁教给我的18件事'
+        },
+        slug: '33岁教给我的18件事',
+        category: 'bookreading',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Rich habits',
+          'zh-CN': '富有的习惯'
+        },
+        slug: '富有的习惯',
+        category: 'bookreading',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Wharton‘s most popular negotiation class',
+          'zh-CN': '沃顿商学院最受欢迎的谈判课'
+        },
+        slug: '沃顿商学院最受欢迎的谈判课',
+        category: 'bookreading',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bretton Woods System',
+          'zh-CN': '布雷顿森林体系'
+        },
+        slug: '布雷顿森林体系',
+        category: 'finance',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Jamaica System',
+          'zh-CN': '牙买加体系'
+        },
+        slug: '牙买加体系',
+        category: 'finance',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Scale and management of foreign exchange reserve',
+          'zh-CN': '外汇储备规模与管理'
+        },
+        slug: '外汇储备规模与管理',
+        category: 'finance',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Political Economy Test Points',
+          'zh-CN': '[政治经济学] 考点'
+        },
+        slug: '[政治经济学]-考点',
+        category: 'finance',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Political Economy Introduction',
+          'zh-CN': '[政治经济学] 导论'
+        },
+        slug: '[政治经济学]-导论',
+        category: 'finance',
+        date: '2020-10-20',
+        titleless: false,
+        commentless: false,
+        draft: false
       },
 
-      {
-        title: {
-          'en-US': 'Add posts or pages',
-          'zh-CN': '新建文章或页面'
-        },
-        slug: 'add-posts-or-pages',
-        category: 'docs',
-        date: '2017-01-12'
-      },
-      {
-        title: {
-          'en-US': 'Customize navigation menu',
-          'zh-CN': '自定义导航菜单'
-        },
-        slug: 'customize-navigation-menu',
-        category: 'docs',
-        date: '2017-01-11'
-      },
-      {
-        title: {
-          'en-US': 'Customize the site',
-          'zh-CN': '自定义站点'
-        },
-        slug: 'customize-the-site',
-        category: 'docs',
-        date: '2017-01-10'
-      },
-      /* 2016 */
-      {
-        title: {
-          'en-US': 'File structure of Vuelog',
-          'zh-CN': 'Vuelog 文件结构'
-        },
-        slug: 'file-structure-of-vuelog',
-        category: 'docs',
-        date: '2016-10-20'
-      },
-      {
-        title: {
-          'en-US': 'Style examples',
-          'zh-CN': '样式示例'
-        },
-        slug: 'style-examples',
-        category: 'showcase',
-        date: '2016-10-19'
-      }
     ]
   }
 }

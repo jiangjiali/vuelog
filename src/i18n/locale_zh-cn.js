@@ -1,6 +1,6 @@
 const zhCN = {
   home: {
-    description: '基于 Vue.js 构建的无后端博客系统',
+    description: '日常记录',
     download: '下载 v{0}',
     github: 'GitHub'
   },
@@ -39,7 +39,7 @@ const zhCN = {
   },
 
   lang: {
-    switch: '更换语言：'
+    switch: '更换语言'
   }
 }
 

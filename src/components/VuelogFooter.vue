@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div>
-      <a :href="system.website" target="_blank" rel="noopener noreferrer" v-text="system.brand"></a> &amp; <span>&#10084;</span>
+      <a :href="system.website" target="_blank" rel="noopener noreferrer" v-text="system.brand"></a>
     </div>
     <vuelog-language class="lang" v-if="enableSwitch"></vuelog-language>
   </footer>

@@ -2,11 +2,11 @@ import enUS from './locale_en-us'
 import zhCN from './locale_zh-cn'
 
 export const languages = {
-  'en-US': 'English',
-  'zh-CN': '简体中文'
+  'zh-CN': '简体中文',
+  'en-US': 'English'
 }
 
 export const locales = {
-  'en-US': enUS,
-  'zh-CN': zhCN
+  'zh-CN': zhCN,
+  'en-US': enUS
 }
