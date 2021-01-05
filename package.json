@@ -1,8 +1,8 @@
 {
-  "name": "vuelog",
+  "name": "知之简史",
   "version": "2.16.0",
   "description": "A backend-free blog system built on top of Vue.js",
-  "author": "Leo Deng",
+  "author": "蒋佳李",
   "license": "MIT",
   "brand": "Vuelog",
   "website": "https://vuelog.js.org",

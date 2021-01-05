@@ -5,10 +5,7 @@ window.Vuelog = {
       // The name of your site, will be displayed in browser tab and site header.
       brand: {
         'en-US': 'Vuelog',
-        'zh-CN': 'Vuelog',
-        'de-DE': 'Vuelog',
-        'pt-BR': 'Vuelog',
-        'es-MX': 'Vuelog'
+        'zh-CN': 'Vuelog'
       },
 
       // Put the site brand behind current page in `document.title`.
@@ -28,8 +25,8 @@ window.Vuelog = {
       // Whether footer is visible on `homePath` or not.
       homeFooter: false,
 
-      // Vuelog interface language. Currently supports 'en-US', 'zh-CN', 'de-DE', 'pt-BR' and 'es-MX'.
-      defaultLang: 'en-US',
+      // Vuelog interface language. Currently supports 'en-US', 'zh-CN'.
+      defaultLang: 'zh-CN',
 
       // Allow/disallow visitors to switch interface language.
       switchLang: true,
@@ -54,10 +51,7 @@ window.Vuelog = {
       {
         label: {
           'en-US': 'Guide',
-          'zh-CN': '指南',
-          'de-DE': 'Anleitung',
-          'pt-BR': 'Guia',
-          'es-MX': 'Guía'
+          'zh-CN': '指南'
         },
         type: 'page',
         path: '/page/guide'
@@ -65,10 +59,7 @@ window.Vuelog = {
       {
         label: {
           'en-US': 'About',
-          'zh-CN': '关于',
-          'de-DE': 'Über',
-          'pt-BR': 'Sobre',
-          'es-MX': 'Acerca de'
+          'zh-CN': '关于'
         },
         type: 'page',
         path: '/page/about'
@@ -76,10 +67,7 @@ window.Vuelog = {
       {
         label: {
           'en-US': 'Showcase',
-          'zh-CN': '示例',
-          'de-DE': 'Beispiele',
-          'pt-BR': 'Exemplos',
-          'es-MX': 'Ejemplos'
+          'zh-CN': '示例'
         },
         type: 'category',
         path: '/blog/showcase'
@@ -87,10 +75,7 @@ window.Vuelog = {
       {
         label: {
           'en-US': 'Archive',
-          'zh-CN': '归档',
-          'de-DE': 'Archiv',
-          'pt-BR': 'Arquivo',
-          'es-MX': 'Archivo'
+          'zh-CN': '归档'
         },
         type: 'archive',
         path: '/archive'
@@ -98,16 +83,13 @@ window.Vuelog = {
       {
         label: {
           'en-US': 'Links',
-          'zh-CN': '链接',
-          'de-DE': 'Links',
-          'pt-BR': 'Links',
-          'es-MX': 'Enlaces'
+          'zh-CN': '链接'
         },
         type: 'dropdown',
         path: '', // (OPTIONAL) dropdown can be routable too if you set a valid route path
         children: [
           {
-            label: { 'en-US': 'Weibo', 'zh-CN': '微博', 'de-DE': 'Weibo', 'pt-BR': 'Weibo', 'es-MX': 'Weibo' },
+            label: { 'en-US': 'Weibo', 'zh-CN': '微博' },
             type: 'outgoing',
             link: 'https://weibo.com/myst729'
           },
@@ -115,11 +97,6 @@ window.Vuelog = {
             label: 'GitHub',
             type: 'outgoing',
             link: 'https://github.com/myst729'
-          },
-          {
-            label: 'StackOverflow',
-            type: 'outgoing',
-            link: 'https://stackoverflow.com/users/1032492'
           }
         ]
       }
@@ -129,10 +106,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Vuelog Guide',
-          'zh-CN': 'Vuelog 指南',
-          'de-DE': 'Vuelog Anleitung',
-          'pt-BR': 'Guia Vuelog',
-          'es-MX': 'Guía Vuelog'
+          'zh-CN': 'Vuelog 指南'
         },
         slug: 'guide',
         exclude: true, // (OPTIONAL) `true` to exclude the page from archive view
@@ -143,20 +117,14 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'About Vuelog',
-          'zh-CN': '关于 Vuelog',
-          'de-DE': 'Über Vuelog',
-          'pt-BR': 'Sobre o Vuelog',
-          'es-MX': 'Sobre Vuelog'
+          'zh-CN': '关于 Vuelog'
         },
         slug: 'about'
       },
       {
         title: {
           'en-US': 'Changelog',
-          'zh-CN': '变更日志',
-          'de-DE': 'Änderungen',
-          'pt-BR': 'Changelog',
-          'es-MX': 'Registro de cambios'
+          'zh-CN': '变更日志'
         },
         slug: 'changelog'
       }
@@ -166,20 +134,14 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Documentation',
-          'zh-CN': '文档',
-          'de-DE': 'Dokumentation',
-          'pt-BR': 'Documentação',
-          'es-MX': 'Documentación'
+          'zh-CN': '文档'
         },
         slug: 'docs'
       },
       {
         title: {
           'en-US': 'Showcase',
-          'zh-CN': '示例',
-          'de-DE': 'Beispiele',
-          'pt-BR': 'Exemplos',
-          'es-MX': 'Ejemplos'
+          'zh-CN': '示例'
         },
         slug: 'showcase'
       }
@@ -190,10 +152,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Multiple languages support',
-          'zh-CN': '多语言支持',
-          'de-DE': 'Untersützung mehrerer Sprachen',
-          'pt-BR': 'Suporte a vários Idiomas',
-          'es-MX': 'Soporte multiidioma'
+          'zh-CN': '多语言支持'
         },
         slug: 'multiple-languages-support',
         category: 'docs',
@@ -202,10 +161,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Use social commenting services',
-          'zh-CN': '使用社会化评论服务',
-          'de-DE': 'Benutzung sozialer Kommentardienste',
-          'pt-BR': 'Uso de Serviços Sociais de Comentários',
-          'es-MX': 'Uso de servicios de comentarios'
+          'zh-CN': '使用社会化评论服务'
         },
         slug: 'use-social-commenting-services',
         category: 'docs',
@@ -215,10 +171,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Insert code blocks with syntax highlight',
-          'zh-CN': '插入语法高亮的代码块',
-          'de-DE': 'Einfügen von Code Blöcken mit Syntax Highlighting',
-          'pt-BR': 'Inserir blocos de código com realce de sintaxe',
-          'es-MX': 'Bloques de código con resaltado de sintaxis'
+          'zh-CN': '插入语法高亮的代码块'
         },
         slug: 'insert-code-blocks-with-syntax-highlight',
         category: 'docs',
@@ -227,10 +180,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Author posts or pages',
-          'zh-CN': '编写文章或页面',
-          'de-DE': 'Beiträge und Seiten verfassen',
-          'pt-BR': 'Posts ou Páginas por Autor',
-          'es-MX': 'Publicaciones de author o páginas'
+          'zh-CN': '编写文章或页面'
         },
         slug: 'author-posts-or-pages',
         category: 'docs',
@@ -240,10 +190,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Add posts or pages',
-          'zh-CN': '新建文章或页面',
-          'de-DE': 'Beiträge und Seiten hinzufügen',
-          'pt-BR': 'Adicionar Posts ou Páginas',
-          'es-MX': 'Agregar posts o páginas'
+          'zh-CN': '新建文章或页面'
         },
         slug: 'add-posts-or-pages',
         category: 'docs',
@@ -252,10 +199,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Customize navigation menu',
-          'zh-CN': '自定义导航菜单',
-          'de-DE': 'Navigationsmenü anpassen',
-          'pt-BR': 'Customizar o menu de navegação',
-          'es-MX': 'Menú de navegación personalizado'
+          'zh-CN': '自定义导航菜单'
         },
         slug: 'customize-navigation-menu',
         category: 'docs',
@@ -264,10 +208,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Customize the site',
-          'zh-CN': '自定义站点',
-          'de-DE': 'Seite anpassen',
-          'pt-BR': 'Customizar o site',
-          'es-MX': 'Personalizar el sitio'
+          'zh-CN': '自定义站点'
         },
         slug: 'customize-the-site',
         category: 'docs',
@@ -277,10 +218,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'File structure of Vuelog',
-          'zh-CN': 'Vuelog 文件结构',
-          'de-DE': 'Dateistruktur von Vuelog',
-          'pt-BR': 'Estrutura do Diretório do Vuelog',
-          'es-MX': 'Estructura de archivos Vuelog'
+          'zh-CN': 'Vuelog 文件结构'
         },
         slug: 'file-structure-of-vuelog',
         category: 'docs',
@@ -289,10 +227,7 @@ window.Vuelog = {
       {
         title: {
           'en-US': 'Style examples',
-          'zh-CN': '样式示例',
-          'de-DE': 'Style Beispiele',
-          'pt-BR': 'Exemplos de estilo',
-          'es-MX': 'Ejemplos de estilo'
+          'zh-CN': '样式示例'
         },
         slug: 'style-examples',
         category: 'showcase',
