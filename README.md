@@ -1,5 +1,5 @@
-# Vuelog
-> blog system 
+# 日常记录
+> 博客系统
 
 ## Project setup
 ```
@@ -21,10 +21,5 @@ npm run build
 npm run lint
 ```
 
-### Run your unit tests
-```
-npm run unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 配置说明
+[配置说明](https://cli.vuejs.org/config/).
