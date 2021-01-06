@@ -38,7 +38,7 @@ const zhCN = {
   },
 
   lang: {
-    switch: '更换语言'
+    switch: '更换语言：'
   }
 }
 

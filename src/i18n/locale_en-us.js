@@ -38,7 +38,7 @@ const enUS = {
   },
 
   lang: {
-    switch: 'Language'
+    switch: 'Language：'
   }
 }
 

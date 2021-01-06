@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img src="../assets/img/vuelog.svg">
-    <h1 v-text="system.brand"></h1>
+    <h1 v-text="title"></h1>
     <p v-text="$t('home.description')"></p>
   </div>
 </template>
@@ -19,10 +19,6 @@ export default {
 
     config () {
       return this.$store.getters.config
-    },
-
-    system () {
-      return this.$store.getters.system
     },
 
     title () {
