@@ -3,10 +3,11 @@ title: 个人简介
 <!-- en-US:+ -->
 # Name: Jiang Jiali
 ## Position: Sound Designer
-> Contact: 17688556485
+* Wechat: 17688556485
+* Email: 1036226474@qq.com
 
 ## Introduction
-> Cheerful, sincere, optimistic, strong adaptability, and strong management planning and organization management coordination capabilities.
+> The voice of art. Easygoing in work, pay attention to teamwork. He has rich experience in music production, and is familiar with the characteristics and creative techniques of orchestral instruments, especially good at expressing the sense of picture and music works. At present, there are a number of mature works with a wide range of styles, including pop, orchestral, electronic and so on.
 
 ## Work Experience
 ### Shenzhen Panshan Technology Co., Ltd.
@@ -54,11 +55,12 @@ title: 个人简介
 
 <!-- zh-CN:+ -->
 # 姓名：蒋佳李
-## 职位：声音设计师
-> 联系方式：17688556485
+## 职业：声音设计师
+* 微信: 17688556485
+* 邮箱: 1036226474@qq.com
 
 ## 简介
-> 性格开朗、为人诚恳、乐观向上、拥有较强的适应能力、并具有较强的管理策划与组织管理协调能力。
+> 述说艺术之声。在工作中性格随和，注重团队协作。对音乐制作经验丰富，对管弦乐器对特性及创作手法纯熟，尤其善长于表达画面感对配乐作品。现有一批涉猎风格广泛对成熟作品，包含有流行，管弦，电子等。
 
 ## 工作经历
 ### 深圳市攀山科技有限公司
