@@ -340,10 +340,10 @@ window.Vuelog = {
       },
       {
         title: {
-          'en-US': 'Political Economy Test Points',
-          'zh-CN': '[政治经济学] 考点'
+          'en-US': 'Political Economy - Test Points',
+          'zh-CN': '政治经济学 - 考点'
         },
-        slug: '[政治经济学]-考点',
+        slug: '政治经济学-考点',
         category: 'finance',
         summary: {
           'en-US': 'In the West, the first to use the term "economy" was the ancient Greek thinker Xenophon. The French mercantilist Ann de Montclair first used the term "political economy", political economy 17 Produced as an independent subject in the middle of the century.',
@@ -356,10 +356,10 @@ window.Vuelog = {
       },
       {
         title: {
-          'en-US': 'Political Economy Introduction',
-          'zh-CN': '[政治经济学] 导论'
+          'en-US': 'Political Economy - Introduction',
+          'zh-CN': '政治经济学 - 导论'
         },
-        slug: '[政治经济学]-导论',
+        slug: '政治经济学-导论',
         category: 'finance',
         summary: {
           'en-US': 'Political economy is a science that studies economic activities, economic relations, and economic laws of a certain social production, distribution, exchange, and consumption.',
