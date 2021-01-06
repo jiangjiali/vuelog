@@ -61,7 +61,7 @@ export default {
     margin-top 75px
 
   h1
-    font-weight 300
+    font-weight 600
     font-size 60px
     margin-top 16px
     margin-bottom 36px
