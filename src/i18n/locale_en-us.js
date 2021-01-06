@@ -1,6 +1,6 @@
 const enUS = {
   home: {
-    description: 'vlog everyday',
+    description: 'Sound Designer',
     about: 'About',
     blog: 'Blog'
   },

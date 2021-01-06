@@ -1,6 +1,6 @@
 const zhCN = {
   home: {
-    description: '日常记录',
+    description: '声音设计师',
     about: '关于',
     blog: '博客'
   },
