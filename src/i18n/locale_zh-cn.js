@@ -22,7 +22,7 @@ const zhCN = {
 
   reading: {
     blog: '日志',
-    continued: '继续阅读……',
+    continued: '详细阅读',
     page: '第 {0} 页'
   },
 

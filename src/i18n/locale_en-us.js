@@ -22,7 +22,7 @@ const enUS = {
 
   reading: {
     blog: 'Blog',
-    continued: 'Continue reading ...',
+    continued: 'Read In Detail',
     page: 'Page {0}'
   },
 

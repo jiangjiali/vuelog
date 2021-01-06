@@ -14,7 +14,7 @@
         </h4>
         <!-- used in posts view -->
         <div v-if="type === 'posts'">
-          <div class="content-container" v-html="content[0]"></div>
+          <div class="content-container" v-text="metadata.summary"></div>
           <div class="continue-reading">
             <router-link :to="{name: 'post', params: {category: metadata.category, slug: metadata.slug, year: metadata.year}}" v-text="$t('reading.continued')"></router-link>
           </div>
