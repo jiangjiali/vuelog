@@ -71,8 +71,8 @@ window.Vuelog = {
     pages: [
       {
         title: {
-          'en-US': 'About',
-          'zh-CN': '关于'
+          'en-US': 'Profile',
+          'zh-CN': '个人简介'
         },
         slug: 'about',
         exclude: true, // (可选) `true` 从存档视图中排除该页
@@ -126,9 +126,9 @@ window.Vuelog = {
           'zh-CN': '家族钥匙管理'
         },
         date: '2020-1-1',
-        titleless: false,   // (可选) `true` 在页面视图中隐藏标题
+        titleless: false, // (可选) `true` 在页面视图中隐藏标题
         commentless: false, // (可选) `true` 禁用页的注释
-        draft: false        // (可选) `true` 使页面暂时无法访问
+        draft: false // (可选) `true` 使页面暂时无法访问
       },
       {
         title: {
