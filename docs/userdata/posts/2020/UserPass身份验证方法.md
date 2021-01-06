@@ -1,6 +1,4 @@
 title: UserPass 身份验证方法
-category: familymanagement
-date: 2020-10-20
 ------------------------------------
 <!-- zh-CN:+ -->
 “userpass”身份验证方法允许用户使用用户名和密码组合对安全库进行身份验证。

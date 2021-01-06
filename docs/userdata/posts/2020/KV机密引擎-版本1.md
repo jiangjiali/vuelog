@@ -1,6 +1,4 @@
 title: KV机密引擎 - 版本1
-category: familymanagement
-date: 2020-10-20
 ------------------------------------
 
 <!-- zh-CN:+ -->

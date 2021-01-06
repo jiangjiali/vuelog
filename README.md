@@ -1,5 +1,5 @@
-# [Vuelog](https://vuelog.js.org/)
-> A backend-free blog system built on top of Vue.js
+# Vuelog
+> blog system 
 
 ## Project setup
 ```

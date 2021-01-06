@@ -1,10 +1,8 @@
 <template>
   <div class="home">
-    <img src="../assets/img/vuelog.png">
+    <img src="../assets/img/vuelog.svg">
     <h1 v-text="system.brand"></h1>
     <p v-text="$t('home.description')"></p>
-    <a class="button" :href="download" v-text="$t('home.download', [system.version])" target="_blank" rel="noopener noreferrer"></a>
-    <a class="button github" :href="system.project" target="_blank" rel="noopener noreferrer" v-text="$t('home.github')"></a>
   </div>
 </template>
 
@@ -25,10 +23,6 @@ export default {
 
     system () {
       return this.$store.getters.system
-    },
-
-    download () {
-      return `${this.system.project}/latest`
     },
 
     title () {
@@ -71,14 +65,6 @@ export default {
     font-size 20px
     margin-bottom 24px
 
-  .github
-    background #fff
-    color #4fc08d
-
-    &:hover
-      background #fcfcfc
-      color #5dc596
-
   @media screen and (max-width: 999px)
     img
       height 192px
@@ -89,7 +75,4 @@ export default {
     p
       margin-top 15px
       margin-bottom 15px
-
-    .button
-      margin-bottom .25em
 </style>

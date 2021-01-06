@@ -37,12 +37,6 @@ window.Vuelog = {
       // Number of posts listed in a blog/category view.
       postsCount: 3,
 
-      // Fill in the shortname to integrate Disqus with your blog.
-      disqusShortname: '',
-
-      // Fill in the uid to integrate LiveRe with your blog.
-      livereUid: '',
-
       // Options for marked, see https://github.com/chjj/marked#options-1 for detail
       markedOptions: {}
     },
@@ -50,19 +44,19 @@ window.Vuelog = {
     navigation: [
       {
         label: {
-          'en-US': 'About',
-          'zh-CN': '关于'
-        },
-        type: 'page',
-        path: '/page/about'
-      },
-      {
-        label: {
           'en-US': 'Blog',
           'zh-CN': '博客'
         },
         type: 'archive',
         path: '/archive'
+      },
+      {
+        label: {
+          'en-US': 'About',
+          'zh-CN': '关于'
+        },
+        type: 'page',
+        path: '/page/about'
       }
     ],
 
@@ -83,13 +77,6 @@ window.Vuelog = {
     categories: [
       {
         title: {
-          'en-US': 'Family',
-          'zh-CN': '家族管理'
-        },
-        slug: 'familymanagement'
-      },
-      {
-        title: {
           'en-US': 'Finance',
           'zh-CN': '金融学'
         },
@@ -108,6 +95,13 @@ window.Vuelog = {
           'zh-CN': '学习百科'
         },
         slug: 'wiki'
+      },
+      {
+        title: {
+          'en-US': 'Family',
+          'zh-CN': '家族管理'
+        },
+        slug: 'familymanagement'
       }
     ],
 
@@ -119,10 +113,10 @@ window.Vuelog = {
         },
         slug: '家族钥匙管理',
         category: 'familymanagement',
-        date: '2020-01-24',
-        titleless: false,   // (OPTIONAL) `true` to hide the title in page view
-        commentless: false, // (OPTIONAL) `true` to disable comments for the page
-        draft: false        // (OPTIONAL) `true` to make the page temporarily inaccessible
+        date: '2020-1-1',
+        titleless: false,   // (可选) `true` 在页面视图中隐藏标题
+        commentless: false, // (可选) `true` 禁用页的注释
+        draft: false        // (可选) `true` 使页面暂时无法访问
       },
       {
         title: {
@@ -131,7 +125,7 @@ window.Vuelog = {
         },
         slug: 'KV机密引擎-版本1',
         category: 'familymanagement',
-        date: '2020-10-20',
+        date: '2020-1-2',
         titleless: false,
         commentless: false,
         draft: false
@@ -143,7 +137,7 @@ window.Vuelog = {
         },
         slug: 'KV机密引擎-版本2',
         category: 'familymanagement',
-        date: '2020-10-20',
+        date: '2020-1-3',
         titleless: false,
         commentless: false,
         draft: false
@@ -155,7 +149,7 @@ window.Vuelog = {
         },
         slug: 'KV机密引擎',
         category: 'familymanagement',
-        date: '2020-10-20',
+        date: '2020-2-1',
         titleless: false,
         commentless: false,
         draft: false
@@ -167,7 +161,7 @@ window.Vuelog = {
         },
         slug: 'TOTP机密引擎',
         category: 'familymanagement',
-        date: '2020-10-20',
+        date: '2020-2-2',
         titleless: false,
         commentless: false,
         draft: false
@@ -179,7 +173,7 @@ window.Vuelog = {
         },
         slug: 'transit-secret-engine',
         category: 'familymanagement',
-        date: '2020-10-20',
+        date: '2020-2-3',
         titleless: false,
         commentless: false,
         draft: false
@@ -191,7 +185,7 @@ window.Vuelog = {
         },
         slug: 'UserPass身份验证方法',
         category: 'familymanagement',
-        date: '2020-10-20',
+        date: '2020-2-4',
         titleless: false,
         commentless: false,
         draft: false
@@ -203,7 +197,7 @@ window.Vuelog = {
         },
         slug: '英语名言-收藏版',
         category: 'wiki',
-        date: '2020-10-20',
+        date: '2020-3-1',
         titleless: false,
         commentless: false,
         draft: false
@@ -215,7 +209,7 @@ window.Vuelog = {
         },
         slug: '33岁教给我的18件事',
         category: 'bookreading',
-        date: '2020-10-20',
+        date: '2020-4-1',
         titleless: false,
         commentless: false,
         draft: false
@@ -227,7 +221,7 @@ window.Vuelog = {
         },
         slug: '富有的习惯',
         category: 'bookreading',
-        date: '2020-10-20',
+        date: '2020-4-2',
         titleless: false,
         commentless: false,
         draft: false
@@ -239,7 +233,7 @@ window.Vuelog = {
         },
         slug: '沃顿商学院最受欢迎的谈判课',
         category: 'bookreading',
-        date: '2020-10-20',
+        date: '2020-4-3',
         titleless: false,
         commentless: false,
         draft: false
@@ -251,7 +245,7 @@ window.Vuelog = {
         },
         slug: '布雷顿森林体系',
         category: 'finance',
-        date: '2020-10-20',
+        date: '2020-5-1',
         titleless: false,
         commentless: false,
         draft: false
@@ -263,7 +257,7 @@ window.Vuelog = {
         },
         slug: '牙买加体系',
         category: 'finance',
-        date: '2020-10-20',
+        date: '2020-5-2',
         titleless: false,
         commentless: false,
         draft: false
@@ -275,7 +269,7 @@ window.Vuelog = {
         },
         slug: '外汇储备规模与管理',
         category: 'finance',
-        date: '2020-10-20',
+        date: '2020-5-3',
         titleless: false,
         commentless: false,
         draft: false
@@ -287,7 +281,7 @@ window.Vuelog = {
         },
         slug: '[政治经济学]-考点',
         category: 'finance',
-        date: '2020-10-20',
+        date: '2021-1-4',
         titleless: false,
         commentless: false,
         draft: false
@@ -299,7 +293,7 @@ window.Vuelog = {
         },
         slug: '[政治经济学]-导论',
         category: 'finance',
-        date: '2020-10-20',
+        date: '2021-1-6',
         titleless: false,
         commentless: false,
         draft: false

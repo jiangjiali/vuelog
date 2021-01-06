@@ -118,7 +118,7 @@ export default {
     display flex
     max-width 980px
     margin 0 auto
-    padding 25px 40px
+    padding 10px 10px
 
   a:hover
     text-decoration none

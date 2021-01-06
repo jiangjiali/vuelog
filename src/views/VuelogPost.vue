@@ -1,7 +1,6 @@
 <template>
   <div class="post">
     <vuelog-renderer class="post-body" :type="'post'" :metadata="dataset.post"></vuelog-renderer>
-    <vuelog-comments v-if="!dataset.post.commentless" :path="$route.fullPath" key="active"></vuelog-comments>
     <transition name="fade" mode="out-in">
       <vuelog-navigation :prev="dataset.prev" :next="dataset.next" :key="active"></vuelog-navigation>
     </transition>
@@ -11,7 +10,6 @@
 <script>
 import { retrieveByLanguage } from '../utils'
 import VuelogRenderer from '../components/VuelogRenderer'
-import VuelogComments from '../components/VuelogComments'
 import VuelogNavigation from '../components/VuelogNavigation'
 
 export default {
@@ -19,7 +17,6 @@ export default {
 
   components: {
     VuelogRenderer,
-    VuelogComments,
     VuelogNavigation
   },
 
