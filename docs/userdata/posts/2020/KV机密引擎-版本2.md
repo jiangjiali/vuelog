@@ -8,7 +8,7 @@ title: KV机密引擎 - 版本2
 
 此机密引擎尊重ACL策略中“创建”和“更新”功能之间的区别。
 
-[»](#安装)安装
+安装
 ----------------
 
 大多数秘密引擎必须事先配置好才能执行其功能。这些步骤通常由操作员或配置管理工具完成。
@@ -29,7 +29,7 @@ $ vault secrets enable kv-v2
 
 另外，当运行开发模式服务器时，v2`kv` secret引擎默认在路径`secret/`处启用（对于非dev服务器，当前是v1）。它可以在不同的路径上禁用、移动或启用多次。KV机密引擎的每一个实例都是独立的和独特的。
 
-[»](#从版本1升级)从版本1升级
+从版本1升级
 ------------------------------------------------------
 
 可以通过CLI或API将现有的1 kv存储升级到2 kv存储，如下所示。这将启动一个升级过程，将现有的键/值数据升级为版本控制的格式。在此过程中无法访问装载。这个过程可能需要很长的时间，所以要有相应的计划。
@@ -62,7 +62,7 @@ $ curl \
 
 ```
 
-[»](#ACL策略)ACL策略
+ACL策略
 ------------------------
 
 版本2 kv存储使用前缀API，这与版本1 API不同。从1 kv版本升级之前，应更改ACL策略。此外，版本2 API中的不同路径也可以进行不同的访问。
@@ -147,12 +147,12 @@ path "secret/metadata/dev/team-1/*" {
 
 ```
 
-[»](#使用)使用
+使用
 ----------------
 
 在配置机密引擎并且用户/计算机具有具有适当权限的保险库令牌之后，它可以生成凭据。“kv”机密引擎允许使用任意值写入密钥。
 
-### [»](#写入/读取任意数据)写入/读取任意数据
+### 写入/读取任意数据
 
 1.  写入任意数据：
     
@@ -232,7 +232,7 @@ path "secret/metadata/dev/team-1/*" {
     ```
     
 
-### [»](#删除和销毁数据)删除和销毁数据
+### 删除和销毁数据
 
 删除数据时，标准的“vault kv delete”命令将执行软删除。它将把版本标记为已删除，并填充一个“deletion_time”时间戳。软删除不会从存储中删除基础版本数据，这允许恢复版本。“vault kv undelete”命令处理正在删除的版本。
 
@@ -279,7 +279,7 @@ path "secret/metadata/dev/team-1/*" {
     ```
     
 
-### [»](#健元数据)健元数据
+### 健元数据
 
 可以使用metadata命令&API跟踪所有版本和关键元数据。删除元数据项将导致永久删除该项的所有元数据和版本。
 
@@ -376,3 +376,280 @@ path "secret/metadata/dev/team-1/*" {
     
     ```
 <!-- zh-CN:- -->
+
+<!-- en-US:+ -->
+The "kv" secret engine is used to store arbitrary secrets in the physical storage configured for the vault.
+
+The key name must always be a string. If you write non-string values ​​directly through the CLI, they will be converted to strings. However, you can preserve non-string values ​​by writing key/value pairs to the secure library from a JSON file or using HTTP API.
+
+This confidential engine respects the difference between "create" and "update" functions in ACL policies.
+
+installation
+----------------
+
+Most secret engines must be configured in advance to perform their functions. These steps are usually completed by operators or configuration management tools.
+
+The v2`kv` confidential engine can be enabled in the following ways:
+
+```
+$ vault secrets enable -version=2 kv
+
+```
+
+Or, you can use "kv-v2" as the confidential engine type:
+
+```
+$ vault secrets enable kv-v2
+
+```
+
+In addition, when running the development mode server, the v2`kv` secret engine is enabled by default at the path `secret/` (for non-dev servers, it is currently v1). It can be disabled, moved or enabled multiple times on different paths. Each instance of KV Confidential Engine is independent and unique.
+
+Upgrade from version 1
+-------------------------------------------------- ----
+
+The existing 1 kv storage can be upgraded to 2 kv storage through CLI or API, as shown below. This will initiate an upgrade process to upgrade the existing key/value data to a version controlled format. The load cannot be accessed during this process. This process may take a long time, so plan accordingly.
+
+Once upgraded to version 2, the previous path to access the data will no longer be sufficient. You will need to adjust the user policy to add access to the version 2 path, see the ACL rules section below for details. Similarly, once kv data is upgraded to version 2, users/applications will need to update the path they interact with kv data.
+
+You can use CLI command to upgrade the existing 1 kv version to 2 kv storage:
+
+```
+$ vault kv enable-versioning secret/
+Success! Tuned the secrets engine at: secret/
+
+```
+
+Or through API:
+
+```
+$ cat payload.json
+{
+  "options": {
+      "version": "2"
+  }
+}
+
+$ curl \
+    --header "X-Vault-Token: ..." \
+    --request POST \
+    --data @payload.json \
+    http://127.0.0.1:8200/v1/sys/mounts/secret/tune
+
+```
+
+ACL policy
+------------------------
+
+Version 2 kv storage uses the prefix API, which is different from the version 1 API. Before upgrading from the 1 kv version, the ACL policy should be changed. In addition, different paths in the version 2 API can also be accessed differently.
+
+Both the write and read versions are prefixed with the "data/" path. This policy applies to the 1 kv version:
+```
+path "secret/dev/team-1/*" {
+  capabilities = ["create", "update", "read"]
+}
+
+```
+
+Should be changed to:
+
+```
+path "secret/data/dev/team-1/*" {
+  capabilities = ["create", "update", "read"]
+}
+
+```
+
+This backend has different levels of data deletion. To grant the policy permission to delete the latest version of the key:
+
+```
+path "secret/data/dev/team-1/*" {
+  capabilities = ["delete"]
+}
+
+```
+
+To allow the policy to delete any version of the key:
+
+```
+path "secret/delete/dev/team-1/*" {
+  capabilities = ["update"]
+}
+
+```
+
+To allow the policy to undo the deletion of data:
+
+```
+path "secret/undelete/dev/team-1/*" {
+  capabilities = ["update"]
+}
+
+```
+
+To allow the policy to destroy the version, do the following:
+
+```
+path "secret/destroy/dev/team-1/*" {
+  capabilities = ["update"]
+}
+
+```
+
+To allow the policy to list keys:
+
+```
+path "secret/metadata/dev/team-1/*" {
+  capabilities = ["list"]
+}
+
+```
+
+To allow the policy to view the metadata for each version, do the following:
+
+```
+path "secret/metadata/dev/team-1/*" {
+  capabilities = ["read"]
+}
+
+```
+
+To allow the policy to permanently delete all versions and metadata of the key:
+
+```
+path "secret/metadata/dev/team-1/*" {
+  capabilities = ["delete"]
+}
+
+```
+
+use
+----------------
+
+After the confidential engine is configured and the user/computer has a vault token with appropriate permissions, it can generate credentials. The "kv" secret engine allows the key to be written with any value.
+
+### Write/read arbitrary data
+
+1. Write arbitrary data:
+    
+    ```
+    $ vault kv put secret/my-secret my-value=s3cr3t
+    Key Value
+    --- -----
+    created_time 2019-06-19T17:20:22.985303Z
+    deletion_time n/a
+    destroyed false
+    version 1
+    
+    ```
+    
+2. Read arbitrary data:
+    
+    ```
+    $ vault kv get secret/my-secret
+    ====== Metadata ======
+    Key Value
+    --- -----
+    created_time 2019-06-19T17:20:22.985303Z
+    deletion_time n/a
+    destroyed false
+    version 1
+    
+    ====== Data ======
+    Key Value
+    --- -----
+    my-value s3cr3t
+    
+    ```
+    
+3. Write another version, the previous version can still be accessed. You can choose to pass the "-cas" flag to perform check and set operations. If not set, write is allowed. If set to "-cas=0", writing is allowed only when the key does not exist. If the index is non-zero, writing is allowed only if the current version of the key matches the version specified in the cas parameter.
+    
+    ```
+    $ vault kv put -cas=1 secret/my-secret my-value=new-s3cr3t
+    
+    ```
+    
+4. Reading now will return the latest version of the data:
+    
+    ```
+    $ vault kv get secret/my-secret
+    ====== Metadata ======
+    Key Value
+    --- -----
+    created_time 2019-06-19T17:22:23.369372Z
+    deletion_time n/a
+    destroyed false
+    version 2
+    
+    ====== Data ======
+    Key Value
+    --- -----
+    my-value new-s3cr3t
+    
+    ```
+    
+5. You can use the "-version" flag to access the previous version:
+    
+    ```
+    $ vault kv get -version=1 secret/my-secret
+    ====== Metadata ======
+    Key Value
+    --- -----
+    created_time 2019-06-19T17:20:22.985303Z
+    deletion_time n/a
+    destroyed false
+    version 1
+    
+    ====== Data ======
+    Key Value
+    --- -----
+    my-value s3cr3t
+    
+    ```
+    
+
+### Delete and destroy data
+
+When deleting data, the standard "vault kv delete" command will perform soft deletion. It will mark the version as deleted and fill it with a "deletion_time" timestamp. Soft delete does not delete the base version data from storage, which allows the version to be restored. The "vault kv undelete" command handles the version being deleted.
+
+Only when the version of the key exceeds the version allowed by the "maximum version" setting, or when "vault kv destroy" is used, the version data will be permanently deleted. When using the destroy command, the underlying version data will be deleted, and the key metadata will be marked as destroyed. If you clean up the versions by checking max versions, the version metadata will also be deleted from the key.
+
+For details, see the following commands:
+
+1. You can use the delete command to delete the latest version of the key, which also requires a "-versions" flag to delete the previous version:
+    
+    ```
+    $ vault kv delete secret/my-secret
+    t
+    
+    ```
+    
+2. You can undelete the version:
+    
+    ```
+    $ vault kv undelete -versions=2 secret/my-secret
+    Success! Data written to: secret/undelete/my-secret
+    
+    $ vault kv get secret/my-secret
+    ====== Metadata ======
+    Key Value
+    --- -----
+    created_time 2019-06-19T17:23:21.834403Z
+    deletion_time n/a
+    destroyed false
+    version 2
+    
+    ====== Data ======
+    Key Value
+    --- -----
+    my-value short-lived-s3cr3t
+    
+    ```
+    
+3. The destroyed version will permanently delete the basic data:
+    
+    ```
+    $ vault kv destroy -versions=2 secret/my-secret
+    Success! Data written to: secret/destroy/my-secret
+    ```
+<!-- en-US:- -->

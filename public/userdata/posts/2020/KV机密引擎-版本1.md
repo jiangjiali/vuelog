@@ -12,7 +12,7 @@ title: KV机密引擎 - 版本1
 
 **注意**：路径和密钥名称不会被混淆或加密；只有在密钥上设置的值才是。不应将敏感信息存储为机密路径的一部分。
 
-[»](#安装)安装
+安装
 ----------------
 
 要启用版本1 kv存储：
@@ -22,7 +22,7 @@ vault secrets enable -version=1 kv
 
 ```
 
-[»](#使用)使用
+使用
 ----------------
 
 在配置机密引擎并且用户/计算机具有具有适当权限的安全库令牌之后，它可以生成凭据。“kv”机密引擎允许使用任意值写入密钥。
@@ -64,7 +64,7 @@ vault secrets enable -version=1 kv
     ```
     
 
-[»](#TTLs)TTLs
+TTLs
 --------------
 
 与其他机密引擎不同，KV机密引擎不会在过期时强制TTL。相反，“lease_duration”是一个提示，提示消费者应该多久检查一次新值。
@@ -90,3 +90,93 @@ ttl                 30m
 
 ```
 <!-- zh-CN:- -->
+
+<!-- en-US:+ -->
+The "kv" secret engine is used to store arbitrary secrets in the physical storage configured for the vault.
+
+The key written in the "kv" backend will replace the old value; the subfields will not be merged together.
+
+The key name must always be a string. If you write non-string values ​​directly through the CLI, they will be converted to strings. However, you can preserve non-string values ​​by writing key/value pairs to the secure library from a JSON file or using HTTP API.
+
+This confidential engine respects the difference between "create" and "update" functions in ACL policies.
+
+**Note**: The path and key name will not be confused or encrypted; only the value set on the key is. Sensitive information should not be stored as part of a confidential path.
+
+installation
+----------------
+
+To enable version 1 kv storage:
+
+```
+vault secrets enable -version=1 kv
+
+```
+
+use
+----------------
+
+After the secret engine is configured and the user/computer has a security library token with appropriate permissions, it can generate credentials. The "kv" secret engine allows the key to be written with any value.
+
+1. Write arbitrary data:
+    
+    ```
+    $ vault kv put kv/my-secret my-value=s3cr3t
+    Success! Data written to: kv/my-secret
+    
+    ```
+    
+2. Read arbitrary data:
+    
+    ```
+    $ vault kv get kv/my-secret
+    Key Value
+    --- -----
+    my-value s3cr3t
+    
+    ```
+    
+3. List the keys:
+    
+    ```
+    $ vault kv list kv/
+    Keys
+    ----
+    my-secret
+    
+    ```
+    
+4. Delete key:
+    
+    ```
+    $ vault kv delete kv/my-secret
+    Success! Data deleted (if it existed) at: kv/my-secret
+    
+    ```
+    
+
+TTLs
+--------------
+
+Unlike other secret engines, KV secret engine will not force TTL when it expires. On the contrary, "lease_duration" is a reminder of how often the consumer should check the new value.
+
+If the "ttl" key is provided, the KV secret engine will use this value as the lease term:
+
+```
+$ vault kv put kv/my-secret ttl=30m my-value=s3cr3t
+Success! Data written to: kv/my-secret
+
+```
+
+Even if "ttl" is set, the confidential engine will not delete data by itself. The "ttl" key is just an alarm.
+
+When reading a value with "ttl", both the "ttl" key and the "refresh interval" will reflect the value:
+
+```
+$ vault kv get kv/my-secret
+Key Value
+--- -----
+my-value s3cr3t
+ttl 30m
+
+```
+<!-- en-US:- -->
