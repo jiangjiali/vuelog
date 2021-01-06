@@ -58,7 +58,7 @@ export default {
     display inline-block
     height 256px
     width 256px
-    margin-top 75px
+    margin-top 25px
 
   h1
     font-weight 600
