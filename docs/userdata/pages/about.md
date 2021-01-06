@@ -2,6 +2,7 @@ title: 个人简介
 ------------------------------------
 <!-- en-US:+ -->
 # Name: Jiang Jiali
+## Working years: 10 years
 ## Position: Sound Designer
 * Wechat: 17688556485
 * Email: 1036226474@qq.com
@@ -55,6 +56,7 @@ title: 个人简介
 
 <!-- zh-CN:+ -->
 # 姓名：蒋佳李
+## 工作年限：10年
 ## 职业：声音设计师
 * 微信: 17688556485
 * 邮箱: 1036226474@qq.com
