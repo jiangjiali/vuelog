@@ -1,10 +1,10 @@
 {
   "name": "vuelog",
   "version": "1.0.0",
-  "description": "A backend-free blog system built on top of Vue.js",
+  "description": "博客系统",
   "author": "蒋佳李",
   "license": "MIT",
-  "brand": "©2020 蒋佳李 粤ICP备19026698号-1",
+  "brand": "©2021 蒋佳李 粤ICP备19026698号-1",
   "website": "https://www.jiangjiali.com",
   "project": "https://www.jiangjiali.com",
   "scripts": {
