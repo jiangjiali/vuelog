@@ -1,8 +1,0 @@
-@echo off
-title ²¿Êð
-
-call npm run build
-git commit -m ¸üÐÂ
-git push -u origin main
-
-pause
