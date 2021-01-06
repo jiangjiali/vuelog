@@ -370,6 +370,22 @@ window.Vuelog = {
         commentless: false,
         draft: false
       },
+      {
+        title: {
+          'en-US': 'The universal template of English composition for degree',
+          'zh-CN': '学位英语作文万能模板'
+        },
+        slug: '学位英语作文万能模板',
+        category: 'wiki',
+        summary: {
+          'en-US': 'The following is the review materials of degree English, the necessary template of degree English writing.',
+          'zh-CN': '以下是学位英语复习资料,学位英语写作必备万能模板。'
+        },
+        date: '2021-1-7',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
 
     ]
   }
