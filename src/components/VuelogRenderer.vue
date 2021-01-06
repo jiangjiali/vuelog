@@ -14,7 +14,7 @@
         </h4>
         <!-- used in posts view -->
         <div v-if="type === 'posts'">
-          <div class="content-container" v-text="metadata.summary"></div>
+          <div class="content-container" v-text="i18nify(metadata.summary)"></div>
           <div class="continue-reading">
             <router-link :to="{name: 'post', params: {category: metadata.category, slug: metadata.slug, year: metadata.year}}" v-text="$t('reading.continued')"></router-link>
           </div>
@@ -202,15 +202,6 @@ export default {
         markupByLang[lang] = marked(mdByLang[lang])
       })
       return markupByLang
-    },
-
-    // Ever thought of the GitHub API [Markdown](https://developer.github.com/v3/markdown/)?
-    // Well, it may not be a good idea. The API will **silently** eat some tags, like <audio>, <video>. Do it at your own risk.
-    // Want the GitHub look and feel too? Check out [sindresorhus/github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
-    renderGitHubMarkdown (md) {
-      const header = { Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' }
-      const body = JSON.stringify({ text: md, mode: 'markdown' })
-      return this.promiseRequest('POST', 'https://api.github.com/markdown', header, body)
     },
 
     getDelimiterPosition (markup, delimiter) {
