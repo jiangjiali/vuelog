@@ -1,8 +1,8 @@
 const enUS = {
   home: {
     description: 'vlog everyday',
-    download: 'Download v{0}',
-    github: 'GitHub'
+    about: 'About',
+    blog: 'Blog'
   },
 
   oops: {

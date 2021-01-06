@@ -3,6 +3,8 @@
     <img src="../assets/img/vuelog.svg">
     <h1 v-text="title"></h1>
     <p v-text="$t('home.description')"></p>
+    <a class="button" :href="about" v-text="$t('home.about')" rel="noopener noreferrer"></a>
+    <a class="button blog" :href="archive" rel="noopener noreferrer" v-text="$t('home.blog')"></a>
   </div>
 </template>
 
@@ -10,7 +12,7 @@
 import { retrieveByLanguage } from '../utils'
 
 export default {
-  name: 'vuelog-home',
+  name: 'home',
 
   computed: {
     active () {
@@ -19,6 +21,14 @@ export default {
 
     config () {
       return this.$store.getters.config
+    },
+
+    about () {
+      return '/#/page/about'
+    },
+
+    archive () {
+      return '/#/archive'
     },
 
     title () {
@@ -61,6 +71,14 @@ export default {
     font-size 20px
     margin-bottom 24px
 
+  .blog
+    background #fff
+    color #4fc08d
+
+    &:hover
+      background #fcfcfc
+      color #5dc596
+
   @media screen and (max-width: 999px)
     img
       height 192px
@@ -71,4 +89,6 @@ export default {
     p
       margin-top 15px
       margin-bottom 15px
+    .button
+      margin-bottom .25em
 </style>

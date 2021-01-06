@@ -1,8 +1,8 @@
 const zhCN = {
   home: {
     description: '日常记录',
-    download: '下载 v{0}',
-    github: 'GitHub'
+    about: '关于',
+    blog: '博客'
   },
 
   oops: {
