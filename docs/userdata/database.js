@@ -4,8 +4,8 @@ window.Vuelog = {
     config: {
       // 网站名称将显示在浏览器选项卡和网站标题中。
       brand: {
-        'en-US': 'Know It',
-        'zh-CN': '知之简史'
+        'en-US': 'Jolly Jiang',
+        'zh-CN': '蒋佳李'
       },
 
       // 把网站品牌放在当前页面后面 `document.title`.
