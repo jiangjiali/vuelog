@@ -60,6 +60,14 @@ window.Vuelog = {
       },
       {
         label: {
+          'en-US': 'Plan',
+          'zh-CN': '计划'
+        },
+        type: 'page',
+        path: '/page/yearly-plan'
+      },
+      {
+        label: {
           'en-US': 'About',
           'zh-CN': '关于'
         },
@@ -75,6 +83,17 @@ window.Vuelog = {
           'zh-CN': '个人简介'
         },
         slug: 'about',
+        exclude: false, // (可选) `true` 从归档视图中排除该页
+        titleless: false, // (可选) `true` 在页面视图中隐藏标题
+        commentless: false, // (可选) `true` 禁用页的注释
+        draft: false // (可选) `true` 使页面暂时无法访问
+      },
+      {
+        title: {
+          'en-US': 'Yearly Plan',
+          'zh-CN': '年度计划'
+        },
+        slug: 'yearly-plan',
         exclude: false, // (可选) `true` 从归档视图中排除该页
         titleless: false, // (可选) `true` 在页面视图中隐藏标题
         commentless: false, // (可选) `true` 禁用页的注释
