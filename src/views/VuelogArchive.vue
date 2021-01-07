@@ -98,6 +98,8 @@ export default {
           return this.getPostsInCategory(this.$route.params.category)
         case 'archive-year':
           return this.getPostsInYear(+this.$route.params.year)
+        case 'archive':
+          return this.getAllPostsAndPages()
         default:
           return this.getAllPostsAndPages()
       }
