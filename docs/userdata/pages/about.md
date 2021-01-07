@@ -7,6 +7,8 @@ title: 个人简介
 * Wechat: 17688556485
 * Email: 1036226474@qq.com
 
+![微信](/userdata/images/wechat.jpeg)
+
 ## Introduction
 > The voice of art. Easygoing in work, pay attention to teamwork. He has rich experience in music production, and is familiar with the characteristics and creative techniques of orchestral instruments, especially good at expressing the sense of picture and music works. At present, there are a number of mature works with a wide range of styles, including pop, orchestral, electronic and so on.
 
@@ -60,6 +62,8 @@ title: 个人简介
 ## 职业：声音设计师
 * 微信: 17688556485
 * 邮箱: 1036226474@qq.com
+
+![微信](/userdata/images/wechat.jpeg)
 
 ## 简介
 > 述说艺术之声。在工作中性格随和，注重团队协作。对音乐制作经验丰富，对管弦乐器对特性及创作手法纯熟，尤其善长于表达画面感对配乐作品。现有一批涉猎风格广泛对成熟作品，包含有流行，管弦，电子等。
