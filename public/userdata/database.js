@@ -79,6 +79,17 @@ window.Vuelog = {
         titleless: false, // (可选) `true` 在页面视图中隐藏标题
         commentless: false, // (可选) `true` 禁用页的注释
         draft: false // (可选) `true` 使页面暂时无法访问
+      },
+      {
+        title: {
+          'en-US': 'Profile',
+          'zh-CN': '网站收藏'
+        },
+        slug: 'marks',
+        exclude: false, // (可选) `true` 从归档视图中排除该页
+        titleless: false, // (可选) `true` 在页面视图中隐藏标题
+        commentless: false, // (可选) `true` 禁用页的注释
+        draft: false // (可选) `true` 使页面暂时无法访问
       }
     ],
 
