@@ -471,7 +471,38 @@ window.Vuelog = {
         commentless: false,
         draft: false
       },
-
+      {
+        title: {
+          'en-US': 'Financial hot spots',
+          'zh-CN': '金融热点'
+        },
+        slug: '金融热点',
+        category: 'finance',
+        summary: {
+          'en-US': 'Financial hot spots are generally hot events in the last year (March November)',
+          'zh-CN': '金融热点一般是在最近1年热点事件(3月-11月)'
+        },
+        date: '2021-01-08',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Libra, Financial hot spot',
+          'zh-CN': '金融热点-Libra'
+        },
+        slug: '金融热点-Libra',
+        category: 'finance',
+        summary: {
+          'en-US': 'It`s a digital currency issued by Facebook, supported by blockchain technology, managed by a special association (the Library Association), and encrypted.',
+          'zh-CN': 'Facebook主导发行的，以区块链技术支持的，由专门的协会管理(libra协会)，加密的数字货币。'
+        },
+        date: '2021-01-09',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
     ]
   }
 }
