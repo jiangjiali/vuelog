@@ -18,7 +18,9 @@ const prodConfig = {
         { name: 'vue-i18n', var: 'VueI18n', path: 'dist/vue-i18n.min.js' }
       ],
       prodUrl: '//cdn.jsdelivr.net/npm/:name@:version/:path',
-      crossOrigin: 'anonymous'
+      crossOrigin: 'anonymous',
+      publicPath: '/js',
+      prod: false
     })
   ]
 }
