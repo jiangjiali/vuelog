@@ -47,6 +47,8 @@ title: 网站收藏
 <!-- next -->
 
 ### 政府
+- [中国共产党新闻网](http://cpc.people.com.cn/)
+- [中央人民政府门户](http://www.gov.cn/)
 - [深圳市规划和国土资源委员会(市海洋局)](http://www.szpl.gov.cn/)
 - [深圳市政府数据开放平台](http://opendata.sz.gov.cn/index)
 - [财政部会计资格评价中心](http://kzp.mof.gov.cn/index.jsp)
