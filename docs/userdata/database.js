@@ -399,7 +399,7 @@ window.Vuelog = {
           'en-US': 'Political economy is a science that studies economic activities, economic relations, and economic laws of a certain social production, distribution, exchange, and consumption.',
           'zh-CN': '政治经济学是研究一定社会生产、分配、交换、消费等经济活动、经济关系、经济规律的科学。'
         },
-        date: '2021-01-06',
+        date: '2021-01-05',
         titleless: false,
         commentless: false,
         draft: false
@@ -415,7 +415,7 @@ window.Vuelog = {
           'en-US': 'The following is the review materials of degree English, the necessary template of degree English writing.',
           'zh-CN': '以下是学位英语复习资料,学位英语写作必备万能模板。'
         },
-        date: '2021-01-07',
+        date: '2021-01-06',
         titleless: false,
         commentless: false,
         draft: false
@@ -431,7 +431,7 @@ window.Vuelog = {
           'en-US': 'According to experience, when making general MP3 songs, it is more appropriate to use 128kbit/s bit rate and joint stereo mode.',
           'zh-CN': '根据经验，在制作一般的MP3歌曲时，使用128kbit/s的位率和联合立体声模式比较合适。'
         },
-        date: '2021-01-07',
+        date: '2021-01-01',
         titleless: false,
         commentless: false,
         draft: false
@@ -447,7 +447,7 @@ window.Vuelog = {
           'en-US': 'Follow these 12 steps to make the original dry sound more shiny and textured. Make sure you don`t miss any steps in the process of vocal mixing from editing, EQ to compression.',
           'zh-CN': '按照这12个步骤将原始干声变得更具光泽与质感。 请确保你不会错过人声混音过程中从编辑、EQ到压缩的任何步骤。'
         },
-        date: '2021-01-08',
+        date: '2021-01-02',
         titleless: false,
         commentless: false,
         draft: false
@@ -463,7 +463,7 @@ window.Vuelog = {
           'en-US': 'The same melody will have different feelings under different chord arrangements. Using the chords well will make the whole tune very nice. If you don`t use them well, it will feel like nursery rhymes.',
           'zh-CN': '同样一个旋律，在不同的和弦编配下，会呈现不同的感觉。和弦用得好会很让整个曲子变得非常好听，用不好的话，会感觉像儿歌的。'
         },
-        date: '2021-01-08',
+        date: '2021-01-03',
         titleless: false,
         commentless: false,
         draft: false
@@ -479,6 +479,22 @@ window.Vuelog = {
           'en-US': 'Financial hot spots are generally hot events in the last year (March November)',
           'zh-CN': '金融热点一般是在最近1年热点事件(3月-11月)'
         },
+        date: '2021-01-07',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Libra digital currency',
+          'zh-CN': 'Libra数字货币'
+        },
+        slug: 'Libra数字货币',
+        category: 'finance',
+        summary: {
+          'en-US': 'It`s a digital currency issued by Facebook, supported by blockchain technology, managed by a special association (the Library Association), and encrypted.',
+          'zh-CN': 'Facebook主导发行的，以区块链技术支持的，由专门的协会管理(libra协会)，加密的数字货币。'
+        },
         date: '2021-01-08',
         titleless: false,
         commentless: false,
@@ -486,20 +502,21 @@ window.Vuelog = {
       },
       {
         title: {
-          'en-US': 'Libra, Financial hot spot',
-          'zh-CN': '金融热点-Libra'
+          'en-US': 'Loan Prime Rate',
+          'zh-CN': '贷款市场报价利率'
         },
-        slug: '金融热点-Libra',
+        slug: '贷款市场报价利率',
         category: 'finance',
         summary: {
-          'en-US': 'It`s a digital currency issued by Facebook, supported by blockchain technology, managed by a special association (the Library Association), and encrypted.',
-          'zh-CN': 'Facebook主导发行的，以区块链技术支持的，由专门的协会管理(libra协会)，加密的数字货币。'
+          'en-US': 'Loan market quotation rate is determined by a representative quotation line.',
+          'zh-CN': '贷款市场报价利率是由具有代表性的报价行。'
         },
         date: '2021-01-09',
         titleless: false,
         commentless: false,
         draft: false
       },
+
     ]
   }
 }
