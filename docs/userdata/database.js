@@ -9,10 +9,7 @@ window.Vuelog = {
       },
 
       // 把网站品牌放在当前页面后面 `document.title`.
-      brandTrailing: false,
-
-      // 显示在站点标题中品牌旁边的图像。
-      logo: 'logo.png',
+      brandTrailing: true,
 
       // 为站点提供服务的域根目录的路径，以斜杠（`/`）开头和结尾。
       // 如果您的站点位于域根目录下，请设置为“'/”。

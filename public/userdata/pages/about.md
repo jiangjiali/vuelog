@@ -7,7 +7,7 @@ title: 个人简介
 * Wechat: 17688556485
 * Email: 1036226474@qq.com
 
-![微信](/images/wechat.jpeg)
+![微信](/userdata/images/wechat.jpeg)
 
 ## Introduction
 > The voice of art. Easygoing in work, pay attention to teamwork. He has rich experience in music production, and is familiar with the characteristics and creative techniques of orchestral instruments, especially good at expressing the sense of picture and music works. At present, there are a number of mature works with a wide range of styles, including pop, orchestral, electronic and so on.

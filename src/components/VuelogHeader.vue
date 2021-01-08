@@ -3,7 +3,7 @@
     <header>
       <h1 class="brand">
         <router-link to="/">
-          <img :src="`userdata/${config.logo}`">
+          <img src="../assets/img/logo.svg">
           <span v-text="i18nify(config.brand)"></span>
         </router-link>
       </h1>
