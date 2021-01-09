@@ -554,7 +554,7 @@ window.Vuelog = {
           'zh-CN': '音频测试参数解析'
         },
         slug: '音频测试参数解析',
-        category: 'wiki',
+        category: 'sound-design',
         summary: {
           'en-US': 'The frequency characteristic of sound system is usually described by the frequency response curve with the ordinate of decibel scale representing power and the abscissa of logarithmic scale representing frequency.',
           'zh-CN': '音响系统的频率特性常用分贝刻度的纵坐标表示功率和用对数刻度的横坐标表示频率的频率响应曲线来描述。'
