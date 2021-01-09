@@ -1,7 +1,14 @@
 # 日常记录
 > 博客系统
-CDN资源地址
+
+### CDN资源地址  
 //cdn.jsdelivr.net/gh/jiangjiali/vuelog/docs/
+
+### 刷新缓存
+改链接  
+https://cdn.jsdelivr.net/  
+切换为  
+https://purge.jsdelivr.net/
 
 ## Project setup
 ```
