@@ -532,6 +532,22 @@ window.Vuelog = {
         commentless: false,
         draft: false
       },
+      {
+        title: {
+          'en-US': 'Triple Mental Model',
+          'zh-CN': '三重心智模型'
+        },
+        slug: '三重心智模型',
+        category: 'wiki',
+        summary: {
+          'en-US': 'We humans are irrational animals. The special thing is that we have the ability to believe in the weird things that our brains conceive.',
+          'zh-CN': '我们人类是不理性的动物，特别之处在于我们有能力去相信自己大脑构思出来的稀奇古怪的东西。'
+        },
+        date: '2021-01-11',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
 
     ]
   }
