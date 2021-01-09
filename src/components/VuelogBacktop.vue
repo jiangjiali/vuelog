@@ -1,10 +1,5 @@
 <template>
-  <div
-    v-show="isShowBackTop"
-    class="vp-backtop"
-    @click="backtopHandle"
-    :style="{ right: `${right}px`, bottom: `${bottom}px` }"
-  >
+  <div v-show="isShowBackTop" class="vp-backtop" @click="backtopHandle">
     <slot>UP</slot>
   </div>
 </template>
@@ -18,18 +13,10 @@ export default {
       type: Number,
       default: 200,
     },
-    right: {
-      type: Number,
-      default: 8,
-    },
-    bottom: {
-      type: Number,
-      default: 100,
-    },
   },
   data () {
     return {
-      controllNum: 10,
+      controllNum: 80,
       intervalDelay: 1,
       timer: null,
       isShowBackTop: false,
@@ -97,10 +84,18 @@ export default {
   cursor: pointer;
   position: fixed;
   z-index: 999;
+  right: 120px;
+  bottom: 80px;
   padding: 8px 8px;
   border: 1px solid #42b983;
   border-radius: 50%;
   background-color: #42b983;
   color: #fff;
+}
+
+@media screen and (max-width: 999px) {
+  .vp-backtop {
+    right: 8px;
+  }
 }
 </style>
