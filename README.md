@@ -1,5 +1,7 @@
 # 日常记录
 > 博客系统
+CDN资源地址
+//cdn.jsdelivr.net/gh/jiangjiali/vuelog/docs/
 
 ## Project setup
 ```
