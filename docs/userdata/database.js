@@ -516,6 +516,22 @@ window.Vuelog = {
         commentless: false,
         draft: false
       },
+      {
+        title: {
+          'en-US': 'Postgraduate enrollment of Sun Yat sen University',
+          'zh-CN': '中山大学研究生招生介绍'
+        },
+        slug: '中山大学研究生招生介绍',
+        category: 'finance',
+        summary: {
+          'en-US': 'Lingnan (University) College of Sun Yat sen University is subordinate to Sun Yat sen University. It adheres to Dr. Sun Yat Sen`s motto of "erudition, interrogation, careful thinking, discernment and practice".',
+          'zh-CN': '中山大学岭南（大学）学院隶属于中山大学，秉承孙中山先生“博学、审问、慎思、明辨、笃行”的校训。'
+        },
+        date: '2021-01-10',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
 
     ]
   }
