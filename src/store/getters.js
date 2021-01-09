@@ -40,7 +40,7 @@ export function pages (state) {
   return state.database.pages
     .filter(page => !page.draft)
     .map(page => {
-      page.markdown = './userdata/pages/' + page.slug + '.md'
+      page.markdown = '//cdn.jsdelivr.net/gh/jiangjiali/vuelog/docs/userdata/pages/' + page.slug + '.md'
       return page
     })
 }
@@ -59,7 +59,7 @@ export function posts (state, getters) {
     .filter(post => !post.draft)
     .map(post => {
       post.year = new Date(post.date).getFullYear()
-      post.markdown = './userdata/posts/' + post.year + '/' + post.slug + '.md'
+      post.markdown = '//cdn.jsdelivr.net/gh/jiangjiali/vuelog/docs/userdata/posts/' + post.year + '/' + post.slug + '.md'
       post.categoryTitle = categoriesHash[post.category]
       return post
     })
