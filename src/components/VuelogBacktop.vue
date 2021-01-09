@@ -5,13 +5,13 @@
     @click="backtopHandle"
     :style="{ right: `${right}px`, bottom: `${bottom}px` }"
   >
-    <slot>Up</slot>
+    <slot>UP</slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "vuelog-backtop",
+  name: 'vuelog-backtop',
   props: {
     target: [String],
     visibilityHeight: {
@@ -20,90 +20,87 @@ export default {
     },
     right: {
       type: Number,
-      default: 50,
+      default: 8,
     },
     bottom: {
       type: Number,
       default: 100,
     },
   },
-  data() {
+  data () {
     return {
       controllNum: 10,
       intervalDelay: 1,
       timer: null,
       isShowBackTop: false,
-    };
+    }
   },
-  created() {},
-  mounted() {
-    window.addEventListener("scroll", this.debounce(this.scrollHandle, 100));
+  mounted () {
+    window.addEventListener('scroll', this.debounce(this.scrollHandle, 100))
   },
   methods: {
     // 防抖
-    debounce(fn, wait) {
-      let timer = null;
+    debounce (fn, wait) {
+      let timer = null
       return function () {
-        if (timer !== null) clearInterval(timer);
-        timer = setTimeout(fn, wait);
-      };
+        if (timer !== null) clearInterval(timer)
+        timer = setTimeout(fn, wait)
+      }
     },
     // 点击置顶事件
-    backtopHandle(e) {
-      this.$emit("click", e, this.target);
-      clearInterval(this.timer);
-      let scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop;
-      let target;
+    backtopHandle (e) {
+      this.$emit('click', e, this.target)
+      clearInterval(this.timer)
+      var target
       if (!this.target) {
-        target = document.documentElement || document.body;
+        target = document.documentElement || document.body
       } else {
         if (/^\./.test(this.target)) {
-          target = document.getElementsByClassName(this.target.substring(1))[0];
+          target = document.getElementsByClassName(this.target.substring(1))[0]
         } else if (/^#/.test(this.target)) {
-          target = document.getElementById(this.target.substring(1));
+          target = document.getElementById(this.target.substring(1))
         }
       }
-      let _this = this;
+      const _this = this
       if (target.offsetTop < document.documentElement.scrollTop) {
         this.timer = window.setInterval(() => {
-          document.documentElement.scrollTop -= this.controllNum;
+          document.documentElement.scrollTop -= this.controllNum
           if (document.documentElement.scrollTop <= target.offsetTop) {
-            _this.$emit("backtop", e, _this.target);
-            window.clearInterval(_this.timer);
+            _this.$emit('backtop', e, _this.target)
+            window.clearInterval(_this.timer)
           }
-        }, _this.intervalDelay);
+        }, _this.intervalDelay)
       } else {
         this.timer = window.setInterval(() => {
-          document.documentElement.scrollTop += this.controllNum;
+          document.documentElement.scrollTop += this.controllNum
           if (document.documentElement.scrollTop >= target.offsetTop) {
-            _this.$emit("backtop", e, _this.target);
-            window.clearInterval(_this.timer);
+            _this.$emit('backtop', e, _this.target)
+            window.clearInterval(_this.timer)
           }
-        }, _this.intervalDelay);
+        }, _this.intervalDelay)
       }
     },
     // 滚动事件
-    scrollHandle() {
-      let scrolltop = document.documentElement.scrollTop;
+    scrollHandle () {
+      const scrolltop = document.documentElement.scrollTop
       if (scrolltop >= this.visibilityHeight) {
-        this.isShowBackTop = true;
+        this.isShowBackTop = true
       } else {
-        this.isShowBackTop = false;
+        this.isShowBackTop = false
       }
     },
   },
-};
+}
 </script>
 <style scoped>
 .vp-backtop {
   cursor: pointer;
   position: fixed;
   z-index: 999;
-  padding: 10px 10px;
-  border: 1px solid cadetblue;
+  padding: 8px 8px;
+  border: 1px solid #42b983;
   border-radius: 50%;
-  background-color: cadetblue;
-  color: aliceblue;
+  background-color: #42b983;
+  color: #fff;
 }
 </style>

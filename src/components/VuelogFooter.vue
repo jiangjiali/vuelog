@@ -4,17 +4,20 @@
       <a :href="system.website" target="_blank" rel="noopener noreferrer" v-text="system.brand"></a>
     </div>
     <vuelog-language class="lang" v-if="enableSwitch"></vuelog-language>
+    <vuelog-backtop></vuelog-backtop>
   </footer>
 </template>
 
 <script>
 import VuelogLanguage from './VuelogLanguage'
+import VuelogBacktop from './VuelogBacktop'
 
 export default {
   name: 'vuelog-footer',
 
   components: {
-    VuelogLanguage
+    VuelogLanguage,
+    VuelogBacktop
   },
 
   computed: {
