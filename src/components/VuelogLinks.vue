@@ -107,18 +107,6 @@ export default {
         pages: this.pages
       }
     }
-  },
-
-  created () {
-    this.$store.dispatch('documentTitle', this.title)
-  },
-
-  watch: {
-    $route (to, from) {
-      if (to.query.lang !== from.query.lang) {
-        this.$store.dispatch('documentTitle', this.title)
-      }
-    }
   }
 }
 </script>

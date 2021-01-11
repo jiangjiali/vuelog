@@ -1,5 +1,6 @@
 const enUS = {
   home: {
+    title: 'Knowledge',
     description: 'Sound Designer',
     about: 'About',
     blog: 'Blog'

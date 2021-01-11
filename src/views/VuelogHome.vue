@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img src="../assets/img/vuelog.svg">
-    <h1 v-text="title"></h1>
+    <h1 v-text="$t('home.title')"></h1>
     <p v-text="$t('home.description')"></p>
     <a class="button" :href="about" v-text="$t('home.about')" rel="noopener noreferrer"></a>
     <a class="button blog" :href="archive" rel="noopener noreferrer" v-text="$t('home.blog')"></a>
@@ -38,8 +38,15 @@ export default {
     },
 
     title () {
-      return retrieveByLanguage(this.config.brand, this.active, this.config.defaultLang)
+      var title = this.$t('home.title')
+      var brand = retrieveByLanguage(this.config.brand, this.active, this.config.defaultLang)
+      if (this.config.brandTrailing) {
+        return title + ' | ' + brand
+      } else {
+        return brand + ' | ' + title
+      }
     }
+
   },
 
   created () {
