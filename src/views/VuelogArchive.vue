@@ -61,13 +61,6 @@
           </ul>
         </li>
       </ul>
-
-      <h2 v-text="$t('archive.pages')"></h2>
-      <ul>
-        <li v-for="(page, index) in archive.pages" :key="index">
-          <router-link :to="{name: 'page', params: {page: page.slug}}" v-text="i18nify(page.title)"></router-link>
-        </li>
-      </ul>
     </div>
   </div>
 </template>
@@ -97,10 +90,6 @@ export default {
 
     postsByYear () {
       return this.$store.getters.postsByYear
-    },
-
-    pages () {
-      return this.$store.getters.pages.filter(page => !page.exclude)
     },
 
     archive () {

@@ -46,10 +46,6 @@ export default {
       return this.$store.getters.postsByCategory
     },
 
-    postsByYear () {
-      return this.$store.getters.postsByYear
-    },
-
     pages () {
       return this.$store.getters.pages.filter(page => !page.exclude)
     },
@@ -87,19 +83,6 @@ export default {
       return { posts: [], slug: '', title: '' }
     },
 
-    getPostsInYear (year) {
-      if (Number.isNaN(year)) {
-        this.oops()
-        return { posts: [], year }
-      }
-      for (var i = 0; i < this.postsByYear.length; i++) {
-        if (this.postsByYear[i].year === year) {
-          return this.postsByYear[i]
-        }
-      }
-      return { posts: [], year }
-    },
-
     getAllPostsAndPages () {
       return {
         postsByCategory: this.postsByCategory,
@@ -113,7 +96,7 @@ export default {
 
 <style scoped lang="stylus">
     .friend{
-        padding-top: 40px;
+        padding-top: 10px;
     }
     .friend-header{
         width: 100%;

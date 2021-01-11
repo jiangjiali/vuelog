@@ -1,9 +1,7 @@
 const zhCN = {
   home: {
     title: '知之简史',
-    description: '声音设计师',
-    about: '关于',
-    blog: '博客'
+    description: '学而不思则罔，思而不学则殆'
   },
 
   oops: {
