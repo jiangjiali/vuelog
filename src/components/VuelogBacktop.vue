@@ -46,7 +46,7 @@ export default {
   cursor: pointer;
   position: fixed;
   z-index: 999;
-  right: 120px;
+  right: 16px;
   bottom: 80px;
   padding: 8px 8px;
   border: 1px solid #42b983;
