@@ -113,8 +113,9 @@ export default {
     flex 1
     display flex
     flex-direction column
-    padding 100px 30px 15px
     width 100%
+    max-width: 1140px;
+    padding 100px 20px 15px
 
   @media screen and (max-width: 1200px)
     .vuelog-body
@@ -123,19 +124,17 @@ export default {
 
   @media screen and (max-width: 992px)
     .vuelog-body
-      padding-top 50px
-      padding-bottom 15px
       max-width: 960px;
-
-    .vuelog-home-view .vuelog-body
-      padding-top 20px
-      padding-bottom 0
+      padding-top 50px
 
   @media screen and (max-width: 768px)
     .vuelog-body
       max-width: 720px;
+      padding-top 50px
 
   @media screen and (max-width: 576px)
     .vuelog-body
       max-width: 540px;
+      padding-top 50px
+
 </style>
