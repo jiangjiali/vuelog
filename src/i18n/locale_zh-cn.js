@@ -12,7 +12,7 @@ const zhCN = {
   },
 
   archive: {
-    title: '归档',
+    title: '博客',
     empty: '没有文章。',
     inCategory: '归入目录 {0} 的文章：',
     inYear: '{0} 年的文章：',

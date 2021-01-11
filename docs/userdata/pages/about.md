@@ -12,6 +12,8 @@ title: 个人简介
 ## 简介
 > 述说艺术之声。在工作中性格随和，注重团队协作。对音乐制作经验丰富，对管弦乐器对特性及创作手法纯熟，尤其善长于表达画面感对配乐作品。现有一批涉猎风格广泛对成熟作品，包含有流行，管弦，电子等。
 
+<hr/>
+
 ## 工作经历
 ### 深圳市攀山科技有限公司
 * 游戏配乐 - 2017/3-至今
@@ -33,6 +35,7 @@ title: 个人简介
 * 音乐编辑 - 2010/8-2012/3
 * 工作，主要负责音乐的管理，以及编辑，和方案！
 
+<hr/>
 
 ## 教育经历
 ### 深圳大学
@@ -42,6 +45,8 @@ title: 个人简介
 ### 四川文理学院
 * 录音工程与音乐制作-大专
 * 2007/9-2010/7
+
+<hr/>
 
 ## 项目经历
 ### 游戏音效
@@ -68,6 +73,8 @@ title: 个人简介
 ## Introduction
 > The voice of art. Easygoing in work, pay attention to teamwork. He has rich experience in music production, and is familiar with the characteristics and creative techniques of orchestral instruments, especially good at expressing the sense of picture and music works. At present, there are a number of mature works with a wide range of styles, including pop, orchestral, electronic and so on.
 
+<hr/>
+
 ## Work Experience
 ### Shenzhen Panshan Technology Co., Ltd.
 * Game soundtrack-2017/3-present
@@ -89,6 +96,7 @@ title: 个人简介
 * Music Editor-2010/8-2012/3
 * Work, mainly responsible for music management, editing, and programs!
 
+<hr/>
 
 ## Education Experience
 ### Shenzhen University
@@ -98,6 +106,8 @@ title: 个人简介
 ### Sichuan University of Arts and Science
 * Recording Engineering and Music Production-Junior College
 * 2007/9-2010/7
+
+<hr/>
 
 ## Technical Experience
 ### Game SoundEffect Production

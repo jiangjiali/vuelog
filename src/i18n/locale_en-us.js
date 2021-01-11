@@ -12,7 +12,7 @@ const enUS = {
   },
 
   archive: {
-    title: 'Archive',
+    title: 'Blog',
     empty: 'No posts found.',
     inCategory: 'Posts in category {0}:',
     inYear: 'Posts in year {0}:',

@@ -144,12 +144,6 @@ export default {
     .statement{
         text-align: center;
     }
-    hr{
-        margin: 40px 0;
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 109, 109, 0.75), rgba(0, 0, 0, 0));
-    }
     .friend-list{
         width: 100%;
         .friend-item{

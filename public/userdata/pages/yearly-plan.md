@@ -31,6 +31,8 @@ title: 年度计划
 * [ ] 保持锻炼
 * [x] 每月修改计划
 
+<hr/>
+
 ### 1.0.1 - 2021-01-09
 #### 修改
 * 修改阅读书籍计划
@@ -74,6 +76,8 @@ title: 年度计划
 * [ ] Adhere to the plan and review
 * [ ] Keep exercising
 * [x] Modify plan every month
+
+<hr/>
 
 ### 1.0.1-2021-01-09
 #### Modify
