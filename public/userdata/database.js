@@ -20,7 +20,7 @@ window.Vuelog = {
       homePath: '/home',
 
       // Footer在“homePath”上是否可见。
-      homeFooter: false,
+      homeFooter: true,
 
       // 目前支持 'en-US', 'zh-CN'.
       defaultLang: 'zh-CN',
