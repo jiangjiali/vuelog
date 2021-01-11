@@ -72,6 +72,7 @@ export function postsByCategory (state, getters) {
       return {
         slug: category.slug,
         title: category.title,
+        summary: category.summary,
         posts: getters.posts
           .filter(post => post.category === category.slug)
           .sort((a, b) => new Date(b.date) - new Date(a.date))

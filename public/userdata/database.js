@@ -79,6 +79,10 @@ window.Vuelog = {
           'en-US': 'Profile',
           'zh-CN': '个人简介'
         },
+        summary: {
+          'en-US': 'Talk about my views on study, work and life.',
+          'zh-CN': '略谈自己对学习、工作、生活等的观点、看法。'
+        },
         slug: 'about',
         exclude: false, // (可选) `true` 从归档视图中排除该页
         titleless: false, // (可选) `true` 在页面视图中隐藏标题
@@ -90,6 +94,10 @@ window.Vuelog = {
           'en-US': 'Yearly Plan',
           'zh-CN': '年度计划'
         },
+        summary: {
+          'en-US': 'Methods, techniques, tools, scientific quantitative system method.',
+          'zh-CN': '方法、技术、工具，科学量化的系统方法。'
+        },
         slug: 'yearly-plan',
         exclude: false, // (可选) `true` 从归档视图中排除该页
         titleless: false, // (可选) `true` 在页面视图中隐藏标题
@@ -100,6 +108,10 @@ window.Vuelog = {
         title: {
           'en-US': 'Profile',
           'zh-CN': '网站收藏'
+        },
+        summary: {
+          'en-US': 'Collect some common websites and some important websites.',
+          'zh-CN': '收藏一些常用网址跟一些重要网址。'
         },
         slug: 'marks',
         exclude: false, // (可选) `true` 从归档视图中排除该页
@@ -115,12 +127,20 @@ window.Vuelog = {
           'en-US': 'Sound Design',
           'zh-CN': '声音设计'
         },
+        summary: {
+          'en-US': 'The theory of music is combined with the background.',
+          'zh-CN': '音乐的理论和背景结合在一起。'
+        },
         slug: 'sound-design'
       },
       {
         title: {
           'en-US': 'Finance',
           'zh-CN': '金融学'
+        },
+        summary: {
+          'en-US': 'The economic activity of financing money and monetary capital.',
+          'zh-CN': '融通货币和货币资金的经济活动。'
         },
         slug: 'finance'
       },
@@ -129,6 +149,10 @@ window.Vuelog = {
           'en-US': 'Book',
           'zh-CN': '书籍阅读'
         },
+        summary: {
+          'en-US': 'Books can increase the knowledge palace of human wisdom and experience.',
+          'zh-CN': '书籍能够增长人类智慧和经验的知识殿堂。'
+        },
         slug: 'bookreading'
       },
       {
@@ -136,12 +160,20 @@ window.Vuelog = {
           'en-US': 'Wiki',
           'zh-CN': '学习百科'
         },
+        summary: {
+          'en-US': 'The process of acquiring knowledge and skills by reading, thinking and practicing.',
+          'zh-CN': '阅读、思考、实践等获得知识和技能的过程。'
+        },
         slug: 'wiki'
       },
       {
         title: {
           'en-US': 'Family',
           'zh-CN': '家族管理'
+        },
+        summary: {
+          'en-US': 'It is a kind of management mode in which ownership and management rights are integrated.',
+          'zh-CN': '所有权与经营权合一的一种管理模式。'
         },
         slug: 'familymanagement'
       }

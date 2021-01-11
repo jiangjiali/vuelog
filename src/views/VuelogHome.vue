@@ -5,14 +5,20 @@
     <p v-text="$t('home.description')"></p>
     <a class="button" :href="about" v-text="$t('home.about')" rel="noopener noreferrer"></a>
     <a class="button blog" :href="archive" rel="noopener noreferrer" v-text="$t('home.blog')"></a>
+    <vuelog-links></vuelog-links>
   </div>
 </template>
 
 <script>
+import VuelogLinks from '../components/VuelogLinks'
 import { retrieveByLanguage } from '../utils'
 
 export default {
   name: 'home',
+
+  components: {
+    VuelogLinks
+  },
 
   computed: {
     active () {

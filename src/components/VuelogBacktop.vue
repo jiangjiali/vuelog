@@ -1,5 +1,5 @@
 <template>
-  <div v-show="isShowBackTop" class="vp-backtop" @click="backtopHandle">
+  <div v-show="show" class="vp-backtop" @click.stop="getTop">
     <slot>UP</slot>
   </div>
 </template>
@@ -7,79 +7,41 @@
 <script>
 export default {
   name: 'vuelog-backtop',
-  props: {
-    target: [String],
-    visibilityHeight: {
-      type: Number,
-      default: 200,
-    },
-  },
   data () {
     return {
-      controllNum: 80,
-      intervalDelay: 1,
-      timer: null,
-      isShowBackTop: false,
+      show: false
+    }
+  },
+  methods: {
+    scroll () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if (scrollTop > 150) {
+        this.show = true
+      } else {
+        this.show = false
+      }
+    },
+    getTop () {
+      const timer = setInterval(() => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        const speed = Math.ceil(scrollTop / 3)
+        document.documentElement.scrollTop = scrollTop - speed
+        if (scrollTop === 0) {
+          clearInterval(timer)
+        }
+      }, 20)
     }
   },
   mounted () {
-    window.addEventListener('scroll', this.debounce(this.scrollHandle, 100))
+    window.addEventListener('scroll', this.scroll)
   },
-  methods: {
-    // 防抖
-    debounce (fn, wait) {
-      let timer = null
-      return function () {
-        if (timer !== null) clearInterval(timer)
-        timer = setTimeout(fn, wait)
-      }
-    },
-    // 点击置顶事件
-    backtopHandle (e) {
-      this.$emit('click', e, this.target)
-      clearInterval(this.timer)
-      var target
-      if (!this.target) {
-        target = document.documentElement || document.body
-      } else {
-        if (/^\./.test(this.target)) {
-          target = document.getElementsByClassName(this.target.substring(1))[0]
-        } else if (/^#/.test(this.target)) {
-          target = document.getElementById(this.target.substring(1))
-        }
-      }
-      const _this = this
-      if (target.offsetTop < document.documentElement.scrollTop) {
-        this.timer = window.setInterval(() => {
-          document.documentElement.scrollTop -= this.controllNum
-          if (document.documentElement.scrollTop <= target.offsetTop) {
-            _this.$emit('backtop', e, _this.target)
-            window.clearInterval(_this.timer)
-          }
-        }, _this.intervalDelay)
-      } else {
-        this.timer = window.setInterval(() => {
-          document.documentElement.scrollTop += this.controllNum
-          if (document.documentElement.scrollTop >= target.offsetTop) {
-            _this.$emit('backtop', e, _this.target)
-            window.clearInterval(_this.timer)
-          }
-        }, _this.intervalDelay)
-      }
-    },
-    // 滚动事件
-    scrollHandle () {
-      const scrolltop = document.documentElement.scrollTop
-      if (scrolltop >= this.visibilityHeight) {
-        this.isShowBackTop = true
-      } else {
-        this.isShowBackTop = false
-      }
-    },
-  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.scroll)
+  }
 }
 </script>
-<style scoped>
+
+<style scoped lang="stylus">
 .vp-backtop {
   cursor: pointer;
   position: fixed;

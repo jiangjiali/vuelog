@@ -1,61 +1,5 @@
 title: 个人简介
 ------------------------------------
-<!-- en-US:+ -->
-# Name: Jiang Jiali
-## Working years: 10 years
-## Position: Sound Designer
-* Wechat: 17688556485
-* Email: 1036226474@qq.com
-
-![微信](//cdn.jsdelivr.net/gh/jiangjiali/vuelog/docs/userdata/images/wechat.jpeg)
-
-## Introduction
-> The voice of art. Easygoing in work, pay attention to teamwork. He has rich experience in music production, and is familiar with the characteristics and creative techniques of orchestral instruments, especially good at expressing the sense of picture and music works. At present, there are a number of mature works with a wide range of styles, including pop, orchestral, electronic and so on.
-
-## Work Experience
-### Shenzhen Panshan Technology Co., Ltd.
-* Game soundtrack-2017/3-present
-* Responsible for all the music and sound effects of the vegas slot game!
-
-### Shenzhen Universe Digital Entertainment Co., Ltd.
-* Sound design-2015/5-2016/11
-* Mainly responsible for the production and mixing of scene music and sound effects of the entire game!
-
-### Shenzhen Yashe Culture Media Co., Ltd.
-* Sound engineer, arranger-2013/12-2015/4
-* Responsible for recording studio affairs! For example: recording voice products for BBK! Make music for backgammon! and many more...
-
-### Shenzhen Interrogation and Technology Co., Ltd.
-* Sound Engineer-2012/4-2013/11
-* The main task is to create APP sound effects and APP demand music! Meet the product! For example: U+ address book, Mocha Time, etc...
-
-### Shenzhen Wuju Technology Co., Ltd.
-* Music Editor-2010/8-2012/3
-* Work, mainly responsible for music management, editing, and programs!
-
-
-## Education Experience
-### Shenzhen University
-* Finance-Undergraduate
-* 2018/6-present
-
-### Sichuan University of Arts and Science
-* Recording Engineering and Music Production-Junior College
-* 2007/9-2010/7
-
-## Technical Experience
-### Game SoundEffect Production
-* Vegas slots entertainment games
-* As the producer of in-game music and sound effects
-
-### Music Appreciation
-* [Celebration Song](https://100audio.com/download/1795482/)
-* [Taigu in Qin and Han Dynasties](https://100audio.com/download/641400/)
-* [The silence of the forest](https://100audio.com/download/641285/)
-* [Four dragons in the wild](https://100audio.com/download/377009/)
-* [Egyptian March](https://100audio.com/download/795626/)
-<!-- en-US:- -->
-
 <!-- zh-CN:+ -->
 # 姓名：蒋佳李
 ## 工龄：10年
@@ -111,3 +55,59 @@ title: 个人简介
 * [四龙野外](https://100audio.com/download/377009/)
 * [埃及进行曲](https://100audio.com/download/795626/)
 <!-- zh-CN:- -->
+
+<!-- en-US:+ -->
+# Name: Jiang Jiali
+## Working years: 10 years
+## Position: Sound Designer
+* Wechat: 17688556485
+* Email: 1036226474@qq.com
+
+![微信](//cdn.jsdelivr.net/gh/jiangjiali/vuelog/docs/userdata/images/wechat.jpeg)
+
+## Introduction
+> The voice of art. Easygoing in work, pay attention to teamwork. He has rich experience in music production, and is familiar with the characteristics and creative techniques of orchestral instruments, especially good at expressing the sense of picture and music works. At present, there are a number of mature works with a wide range of styles, including pop, orchestral, electronic and so on.
+
+## Work Experience
+### Shenzhen Panshan Technology Co., Ltd.
+* Game soundtrack-2017/3-present
+* Responsible for all the music and sound effects of the vegas slot game!
+
+### Shenzhen Universe Digital Entertainment Co., Ltd.
+* Sound design-2015/5-2016/11
+* Mainly responsible for the production and mixing of scene music and sound effects of the entire game!
+
+### Shenzhen Yashe Culture Media Co., Ltd.
+* Sound engineer, arranger-2013/12-2015/4
+* Responsible for recording studio affairs! For example: recording voice products for BBK! Make music for backgammon! and many more...
+
+### Shenzhen Interrogation and Technology Co., Ltd.
+* Sound Engineer-2012/4-2013/11
+* The main task is to create APP sound effects and APP demand music! Meet the product! For example: U+ address book, Mocha Time, etc...
+
+### Shenzhen Wuju Technology Co., Ltd.
+* Music Editor-2010/8-2012/3
+* Work, mainly responsible for music management, editing, and programs!
+
+
+## Education Experience
+### Shenzhen University
+* Finance-Undergraduate
+* 2018/6-present
+
+### Sichuan University of Arts and Science
+* Recording Engineering and Music Production-Junior College
+* 2007/9-2010/7
+
+## Technical Experience
+### Game SoundEffect Production
+* Vegas slots entertainment games
+* As the producer of in-game music and sound effects
+
+### Music Appreciation
+* [Celebration Song](https://100audio.com/download/1795482/)
+* [Taigu in Qin and Han Dynasties](https://100audio.com/download/641400/)
+* [The silence of the forest](https://100audio.com/download/641285/)
+* [Four dragons in the wild](https://100audio.com/download/377009/)
+* [Egyptian March](https://100audio.com/download/795626/)
+<!-- en-US:- -->
