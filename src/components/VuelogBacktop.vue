@@ -46,18 +46,12 @@ export default {
   cursor: pointer;
   position: fixed;
   z-index: 999;
-  right: 16px;
+  right: 8px;
   bottom: 80px;
   padding: 8px 8px;
   border: 1px solid #42b983;
   border-radius: 50%;
   background-color: #42b983;
   color: #fff;
-}
-
-@media screen and (max-width: 999px) {
-  .vp-backtop {
-    right: 8px;
-  }
 }
 </style>
