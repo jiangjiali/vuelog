@@ -116,9 +116,8 @@ export default {
 
   header
     display flex
-    max-width 980px
     margin 0 auto
-    padding 10px 10px
+    padding 10px 40px
 
   a:hover
     text-decoration none
@@ -320,11 +319,11 @@ export default {
     bottom 0
     z-index 6000
 
-  @media screen and (max-width: 1059px)
+  @media screen and (max-width: 1200px)
     header
       padding 10px 40px
 
-  @media screen and (max-width: 999px)
+  @media screen and (max-width: 992px)
     .header-wrap
       box-shadow none
 
