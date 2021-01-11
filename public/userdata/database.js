@@ -135,14 +135,14 @@ window.Vuelog = {
       },
       {
         title: {
-          'en-US': 'Finance',
-          'zh-CN': '金融学'
+          'en-US': 'Wiki',
+          'zh-CN': '学习百科'
         },
         summary: {
-          'en-US': 'The economic activity of financing money and monetary capital.',
-          'zh-CN': '融通货币和货币资金的经济活动。'
+          'en-US': 'The process of acquiring knowledge and skills by reading, thinking and practicing.',
+          'zh-CN': '阅读、思考、实践等获得知识和技能的过程。'
         },
-        slug: 'finance'
+        slug: 'wiki'
       },
       {
         title: {
@@ -157,14 +157,25 @@ window.Vuelog = {
       },
       {
         title: {
-          'en-US': 'Wiki',
-          'zh-CN': '学习百科'
+          'en-US': 'Finance',
+          'zh-CN': '金融学'
         },
         summary: {
-          'en-US': 'The process of acquiring knowledge and skills by reading, thinking and practicing.',
-          'zh-CN': '阅读、思考、实践等获得知识和技能的过程。'
+          'en-US': 'The economic activity of financing money and monetary capital.',
+          'zh-CN': '融通货币和货币资金的经济活动。'
         },
-        slug: 'wiki'
+        slug: 'finance'
+      },
+      {
+        title: {
+          'en-US': 'Important Records',
+          'zh-CN': '重要记录'
+        },
+        summary: {
+          'en-US': 'Record the important things in life.',
+          'zh-CN': '记录生命中的重要事物。'
+        },
+        slug: 'important-records'
       },
       {
         title: {
@@ -362,7 +373,7 @@ window.Vuelog = {
           'zh-CN': '布雷顿森林体系'
         },
         slug: '布雷顿森林体系',
-        category: 'finance',
+        category: 'wiki',
         summary: {
           'en-US': 'The Bretton Woods system means that the U.S. dollar is linked to gold, and one ounce of gold is equal to 35 U.S. dollars; the currencies of various countries are linked to the U.S. dollar, and the currencies of other countries must establish a fixed price relationship with the U.S. dollar. It is a fixed exchange rate system.',
           'zh-CN': '布雷顿森林体系即美元与黄金挂钩，一盎司黄金等于35美元；各国货币与美元挂钩，其他国家的货币必须与美元建立固定的比价关系，它是一种固定汇率制度。'
@@ -378,7 +389,7 @@ window.Vuelog = {
           'zh-CN': '牙买加体系'
         },
         slug: '牙买加体系',
-        category: 'finance',
+        category: 'wiki',
         summary: {
           'en-US': 'In 1976, the IMF "Interim Committee on the International Monetary System" convened a meeting in Jamaica and reached the "Jamaica Agreement." In April of the same year, the IMF Council passed the second amendment of the IMF, thus forming a new pattern of international currency relations.',
           'zh-CN': '1976年，IMF“国际货币制度临时委员会”在牙买加召开会议，并达成《牙买加协议》。同年4月，IMF理事会通过了IMF第二次修正案，从而形成了国际货币关系的新格局。'
@@ -394,7 +405,7 @@ window.Vuelog = {
           'zh-CN': '外汇储备规模与管理'
         },
         slug: '外汇储备规模与管理',
-        category: 'finance',
+        category: 'wiki',
         summary: {
           'en-US': 'Maintaining a certain scale of foreign exchange reserves is an important means to regulate foreign exchange receipts and expenditures and the total market supply and demand. But foreign exchange reserves are not as much as possible.',
           'zh-CN': '保持一定规模的外汇储备是调节外汇收支和市场总供求的重要手段。但是外汇储备并非越多越好。'
@@ -442,7 +453,7 @@ window.Vuelog = {
           'zh-CN': '学位英语作文万能模板'
         },
         slug: '学位英语作文万能模板',
-        category: 'wiki',
+        category: 'finance',
         summary: {
           'en-US': 'The following is the review materials of degree English, the necessary template of degree English writing.',
           'zh-CN': '以下是学位英语复习资料,学位英语写作必备万能模板。'
@@ -506,7 +517,7 @@ window.Vuelog = {
           'zh-CN': '金融热点'
         },
         slug: '金融热点',
-        category: 'finance',
+        category: 'wiki',
         summary: {
           'en-US': 'Financial hot spots are generally hot events in the last year (March November)',
           'zh-CN': '金融热点一般是在最近1年热点事件(3月-11月)'
@@ -522,7 +533,7 @@ window.Vuelog = {
           'zh-CN': 'Libra数字货币'
         },
         slug: 'Libra数字货币',
-        category: 'finance',
+        category: 'wiki',
         summary: {
           'en-US': 'It`s a digital currency issued by Facebook, supported by blockchain technology, managed by a special association (the Library Association), and encrypted.',
           'zh-CN': 'Facebook主导发行的，以区块链技术支持的，由专门的协会管理(libra协会)，加密的数字货币。'
@@ -538,7 +549,7 @@ window.Vuelog = {
           'zh-CN': '贷款市场报价利率'
         },
         slug: '贷款市场报价利率',
-        category: 'finance',
+        category: 'wiki',
         summary: {
           'en-US': 'Loan market quotation rate is determined by a representative quotation line.',
           'zh-CN': '贷款市场报价利率是由具有代表性的报价行。'
