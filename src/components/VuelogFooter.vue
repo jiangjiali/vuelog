@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div>
-      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer" v-text="system.brand"></a>
+      <a :href="system.icpweb" target="_blank" rel="noopener noreferrer" v-text="system.icp"></a>
     </div>
     <vuelog-language class="lang" v-if="enableSwitch"></vuelog-language>
     <vuelog-backtop></vuelog-backtop>

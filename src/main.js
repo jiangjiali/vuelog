@@ -6,9 +6,7 @@ import router from './router'
 import store from './store'
 import Vuelog from './Vuelog'
 import './assets/styles/index.styl'
-import { brand } from '../package'
 
-Object.assign(window.Vuelog, { brand })
 FastClick.attach(document.body)
 Vue.config.productionTip = false
 sync(store, router)

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueMeta from 'vue-meta'
 import VueRouter from 'vue-router'
-import * as database from 'database'
+import database from '../../database'
 
 import VuelogHome from '../views/VuelogHome'
 import VuelogOops from '../views/VuelogOops'
