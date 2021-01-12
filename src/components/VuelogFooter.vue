@@ -40,7 +40,7 @@ export default {
     color #7f8c8d
     font-size 15px
     font-weight 600
-    width 900px
+    width 1140px
     padding 20px 0
     text-align center
     position relative
@@ -56,10 +56,9 @@ export default {
     right 10px
     top 20px
 
-  @media screen and (max-width: 999px)
+  @media screen and (max-width: 992px)
     footer
-      padding 10px 20px
-      width 100%
+      max-width: 100%;
 
     div
       float left
@@ -67,4 +66,5 @@ export default {
     .lang
       position static
       float right
+
 </style>
