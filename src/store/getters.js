@@ -59,7 +59,7 @@ export function posts (state, getters) {
     .filter(post => !post.draft)
     .map(post => {
       post.year = new Date(post.date).getFullYear()
-      post.markdown = './userdata/posts/' + post.year + '/' + post.slug + '.md'
+      post.markdown = './userdata/posts/' + post.category + '/' + post.slug + '.md'
       post.categoryTitle = categoriesHash[post.category]
       return post
     })

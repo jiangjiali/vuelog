@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import database from '../../database'
+import database from '../../data'
 import { languages } from '../i18n/locales'
 import { icp, icpweb } from '../../package'
 
