@@ -623,6 +623,230 @@ window.Vuelog = {
         commentless: false,
         draft: false
       },
+      {
+        title: {
+          'en-US': 'International Finance - Single Choice',
+          'zh-CN': '国际金融学·单选题'
+        },
+        slug: '国际金融学·单选题',
+        category: 'finance',
+        summary: {
+          'en-US': 'International Finance - Single Choice',
+          'zh-CN': '国际金融学·单选题'
+        },
+        date: '2020-09-01',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'International Finance - Multiple Choice',
+          'zh-CN': '国际金融学·多选题'
+        },
+        slug: '国际金融学·多选题',
+        category: 'finance',
+        summary: {
+          'en-US': 'International Finance - Multiple Choice',
+          'zh-CN': '国际金融学·多选题'
+        },
+        date: '2020-09-02',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'International Finance - True or False',
+          'zh-CN': '国际金融学·判断题'
+        },
+        slug: '国际金融学·判断题',
+        category: 'finance',
+        summary: {
+          'en-US': 'International Finance - True or False',
+          'zh-CN': '国际金融学·判断题'
+        },
+        date: '2020-09-03',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'International Finance - Short Answer',
+          'zh-CN': '国际金融学·简答题'
+        },
+        slug: '国际金融学·简答题',
+        category: 'finance',
+        summary: {
+          'en-US': 'International Finance - Short Answer',
+          'zh-CN': '国际金融学·简答题'
+        },
+        date: '2020-09-04',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'International Finance - Essay',
+          'zh-CN': '国际金融学·论述题'
+        },
+        slug: '国际金融学·论述题',
+        category: 'finance',
+        summary: {
+          'en-US': 'International Finance - Essay',
+          'zh-CN': '国际金融学·论述题'
+        },
+        date: '2020-09-05',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·1·Introduction',
+          'zh-CN': '银行信贷管理学·1·绪论'
+        },
+        slug: '银行信贷管理学·1·绪论',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·1·Introduction',
+          'zh-CN': '银行信贷管理学·1·绪论'
+        },
+        date: '2020-10-01',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·2·Bank Deposit Management',
+          'zh-CN': '银行信贷管理学·2·银行存款管理'
+        },
+        slug: '银行信贷管理学·2·银行存款管理',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·2·Bank Deposit Management',
+          'zh-CN': '银行信贷管理学·2·银行存款管理'
+        },
+        date: '2020-10-02',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·3·Bank Non-deposit Fund Management',
+          'zh-CN': '银行信贷管理学·3·银行非存款资金管理'
+        },
+        slug: '银行信贷管理学·3·银行非存款资金管理',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·3·Bank Non-deposit Fund Management',
+          'zh-CN': '银行信贷管理学·3·银行非存款资金管理'
+        },
+        date: '2020-10-03',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·4·General Bank Loan Management',
+          'zh-CN': '银行信贷管理学·4·银行贷款一般管理'
+        },
+        slug: '银行信贷管理学·4·银行贷款一般管理',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·4·General Bank Loan Management',
+          'zh-CN': '银行信贷管理学·4·银行贷款一般管理'
+        },
+        date: '2020-10-04',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·5·Bank Loan Management System',
+          'zh-CN': '银行信贷管理学·5·银行贷款管理制度'
+        },
+        slug: '银行信贷管理学·5·银行贷款管理制度',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·5·Bank Loan Management System',
+          'zh-CN': '银行信贷管理学·5·银行贷款管理制度'
+        },
+        date: '2020-10-05',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·6·Analysis of Bank Loan Credit',
+          'zh-CN': '银行信贷管理学·6·银行贷款信用分析'
+        },
+        slug: '银行信贷管理学·6·银行贷款信用分析',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·6·Analysis of Bank Loan Credit',
+          'zh-CN': '银行信贷管理学·6·银行贷款信用分析'
+        },
+        date: '2020-10-06',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·7·Bank Loan Guarantee Management',
+          'zh-CN': '银行信贷管理学·7·银行贷款担保管理'
+        },
+        slug: '银行信贷管理学·7·银行贷款担保管理',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·7·Bank Loan Guarantee Management',
+          'zh-CN': '银行信贷管理学·7·银行贷款担保管理'
+        },
+        date: '2020-10-07',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·8·Bank Short-term Loan Management',
+          'zh-CN': '银行信贷管理学·8·银行短期贷款管理'
+        },
+        slug: '银行信贷管理学·8·银行短期贷款管理',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·8·Bank Short-term Loan Management',
+          'zh-CN': '银行信贷管理学·8·银行短期贷款管理'
+        },
+        date: '2020-10-08',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
+      {
+        title: {
+          'en-US': 'Bank Credit Management·9·Bank Long-term Loan Management',
+          'zh-CN': '银行信贷管理学·9·银行中长期贷款管理'
+        },
+        slug: '银行信贷管理学·9·银行中长期贷款管理',
+        category: 'finance',
+        summary: {
+          'en-US': 'Bank Credit Management·9·Bank Long-term Loan Management',
+          'zh-CN': '银行信贷管理学·9·银行中长期贷款管理'
+        },
+        date: '2020-10-09',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
 
     ]
   }
