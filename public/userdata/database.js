@@ -607,6 +607,22 @@ window.Vuelog = {
         commentless: false,
         draft: false
       },
+      {
+        title: {
+          'en-US': 'System Thinking·From Restricted View to God`s Perspective',
+          'zh-CN': '思维模型·系统思维·从管窥到上帝视角'
+        },
+        slug: '思维模型·系统思维·从管窥到上帝视角',
+        category: 'bookreading',
+        summary: {
+          'en-US': 'The system is an organic whole that is composed of several elements that are interconnected and interacted with each other, which is expressed as a new function.',
+          'zh-CN': '系统是由相互联系、相互作用的若干要素组成的表现为新功能的有机整体。'
+        },
+        date: '2021-01-13',
+        titleless: false,
+        commentless: false,
+        draft: false
+      },
 
     ]
   }
