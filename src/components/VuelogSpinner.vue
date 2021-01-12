@@ -2,7 +2,7 @@
   <svg width="256" height="256" viewBox="0 0 256 256">
     <g class="group">
       <circle class="stroke outer" fill="none" stroke="#42b983" stroke-width="51.2" cx="128" cy="128" r="102.4" />
-      <circle class="stroke inner" fill="none" stroke="#34495e" stroke-width="48" cx="128" cy="128" r="52.8" />
+      <circle class="stroke inner" fill="none" stroke="#42b983" stroke-width="48" cx="128" cy="128" r="52.8" />
       <circle class="stroke" fill="none" stroke="#fff" stroke-width="28.8" cx="128" cy="128" r="14.4" />
     </g>
   </svg>
