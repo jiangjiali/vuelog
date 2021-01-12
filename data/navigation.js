@@ -1,7 +1,7 @@
 const navigation = [
   {
     label: {
-      'en-US': 'Home',
+      'en-US': 'HOME',
       'zh-CN': '首页'
     },
     type: 'page',
@@ -9,7 +9,7 @@ const navigation = [
   },
   {
     label: {
-      'en-US': 'Blog',
+      'en-US': 'BLOG',
       'zh-CN': '博客'
     },
     type: 'archive',
@@ -17,7 +17,7 @@ const navigation = [
   },
   {
     label: {
-      'en-US': 'Plan',
+      'en-US': 'PLAN',
       'zh-CN': '计划'
     },
     type: 'page',
@@ -25,7 +25,7 @@ const navigation = [
   },
   {
     label: {
-      'en-US': 'About',
+      'en-US': 'ABOUT',
       'zh-CN': '关于'
     },
     type: 'page',

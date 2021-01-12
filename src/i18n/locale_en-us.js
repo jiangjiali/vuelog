@@ -1,7 +1,9 @@
 const enUS = {
   home: {
-    title: 'Knowledge',
-    description: 'Learning without thinking is useless, thinking without learning is dangerous.'
+    title: 'KNOWLEDGE',
+    description: 'Learning without thinking is useless, thinking without learning is dangerous.',
+    category: 'CATEGORY',
+    page: 'PAGE'
   },
 
   oops: {

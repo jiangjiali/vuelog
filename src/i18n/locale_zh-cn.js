@@ -1,7 +1,9 @@
 const zhCN = {
   home: {
     title: '知之简史',
-    description: '学而不思则罔，思而不学则殆'
+    description: '学而不思则罔，思而不学则殆',
+    category: '分类',
+    page: '页面'
   },
 
   oops: {
