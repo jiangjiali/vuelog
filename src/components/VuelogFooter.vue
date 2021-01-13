@@ -51,20 +51,20 @@ export default {
   a:hover
     text-decoration none
 
-  .lang
-    position absolute
-    right 10px
-    top 20px
+  // .lang
+  //   position absolute
+  //   right 10px
+  //   top 20px
 
   @media screen and (max-width: 992px)
     footer
       max-width: 100%;
 
-    div
-      float left
+    // div
+    //   float left
 
-    .lang
-      position static
-      float right
+    // .lang
+    //   position static
+    //   float right
 
 </style>
