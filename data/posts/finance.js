@@ -179,6 +179,16 @@ const finance = [
     commentless: false,
     draft: false
   },
+  {
+    title: '学位英语考试如何复习',
+    slug: '学位英语考试如何复习',
+    category: 'finance',
+    summary: '在成人高考的提升学历中，本科毕业生在毕业时应获取毕业证和学位证。',
+    date: '2021-01-15',
+    titleless: false,
+    commentless: false,
+    draft: false
+  },
 
 ]
 
