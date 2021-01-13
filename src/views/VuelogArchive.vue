@@ -27,23 +27,6 @@
     </div>
 
     <div v-if="displayType === 'archive'" class="archive-body">
-      <h2 v-text="$t('archive.byCategory')"></h2>
-      <ul>
-        <li v-for="(category, index) in archive.postsByCategory" :key="index">
-          <h4>
-            <router-link :to="{name: 'archive-category', params: {category: category.slug}}" v-text="i18nify(category.title)"></router-link>
-            <span v-text="' (' + category.posts.length + ')'"></span>
-          </h4>
-          <ul>
-            <li v-for="(post, index) in category.posts" :key="index">
-              <router-link :to="{name: 'post', params: {category: post.category, slug: post.slug, year: post.year}}" v-text="i18nify(post.title)"></router-link>
-              <span v-text="' ( ' + post.date + ' )'"></span>
-            </li>
-            <li v-if="category.posts.length === 0" v-text="$t('archive.empty')"></li>
-          </ul>
-        </li>
-      </ul>
-
       <h2 v-text="$t('archive.byYear')"></h2>
       <ul>
         <li v-for="(year, index) in archive.postsByYear" :key="index">
@@ -82,10 +65,6 @@ export default {
 
     config () {
       return this.$store.getters.config
-    },
-
-    postsByCategory () {
-      return this.$store.getters.postsByCategory
     },
 
     postsByYear () {
@@ -156,9 +135,7 @@ export default {
 
     getAllPostsAndPages () {
       return {
-        postsByCategory: this.postsByCategory,
-        postsByYear: this.postsByYear,
-        pages: this.pages
+        postsByYear: this.postsByYear
       }
     }
   },
