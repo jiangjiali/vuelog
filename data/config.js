@@ -23,7 +23,7 @@ const config = {
   defaultLang: 'zh-CN',
 
   // 允许/禁止访问者切换界面语言。
-  switchLang: true,
+  switchLang: false,
 
   // 可供切换的语言。必须是受支持语言的子集，或保留为空。
   selectedLangs: [],
