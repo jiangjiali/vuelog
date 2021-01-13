@@ -39,6 +39,36 @@ const soundDesign = [
     commentless: false,
     draft: false
   },
+  {
+    title: 'Dither·音频抖动',
+    slug: 'Dither·音频抖动',
+    category: 'sound-design',
+    summary: '抖动是音乐制作词典中最不被理解的词汇之一，但它又是数字音频处理中一个必不可少的因素。',
+    date: '2021-01-14',
+    titleless: false,
+    commentless: false,
+    draft: false
+  },
+  {
+    title: '混响的运用',
+    slug: '混响的运用',
+    category: 'sound-design',
+    summary: '理解混响的精华所在，以及如何在各种音乐中获得出众的混响效果。',
+    date: '2021-01-14',
+    titleless: false,
+    commentless: false,
+    draft: false
+  },
+  {
+    title: '母带限制器的运用',
+    slug: '母带限制器的运用',
+    category: 'sound-design',
+    summary: '母线效果使用限制器，是现代声音的重要标志。你可以有许多不同的选择。看看有哪些最高效的限制器选择。',
+    date: '2021-01-14',
+    titleless: false,
+    commentless: false,
+    draft: false
+  },
 
 ]
 
