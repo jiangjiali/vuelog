@@ -67,6 +67,10 @@ export default {
       return this.$store.getters.config
     },
 
+    postsByCategory () {
+      return this.$store.getters.postsByCategory
+    },
+
     postsByYear () {
       return this.$store.getters.postsByYear
     },
