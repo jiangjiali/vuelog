@@ -17,9 +17,7 @@ const enUS = {
     empty: 'No posts found.',
     inCategory: 'Posts in category {0}:',
     inYear: 'Posts in year {0}:',
-    byCategory: 'Posts by Category:',
-    byYear: 'Posts by Year:',
-    pages: 'Pages:'
+    byYear: 'Posts by Year:'
   },
 
   reading: {

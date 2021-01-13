@@ -17,9 +17,7 @@ const zhCN = {
     empty: '没有文章。',
     inCategory: '归入{0}的文章：',
     inYear: '{0}年的文章：',
-    byCategory: '分类归档：',
-    byYear: '时间归档：',
-    pages: '页面归档：'
+    byYear: '时间归档：'
   },
 
   reading: {
