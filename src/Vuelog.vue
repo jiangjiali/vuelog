@@ -115,7 +115,7 @@ export default {
     flex-direction column
     width 100%
     max-width: 1140px;
-    padding 100px 20px 15px
+    padding 100px 8px 15px
 
   @media screen and (max-width: 1200px)
     .vuelog-body
