@@ -224,7 +224,7 @@ const wiki = [
     slug: '金融·融资',
     category: 'wiki',
     summary: '金融·融资',
-    date: '2021-01-25',
+    date: '2021-01-26',
     titleless: false,
     commentless: false,
     draft: false
