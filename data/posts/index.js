@@ -4,6 +4,7 @@ import finance from './finance'
 import importantRecords from './important_records'
 import soundDesign from './sound_design'
 import wiki from './wiki'
+import dataAnalysis from './data_analysis'
 
 const posts = []
 
@@ -19,5 +20,6 @@ addData(finance)
 addData(importantRecords)
 addData(soundDesign)
 addData(wiki)
+addData(dataAnalysis)
 
 export default posts

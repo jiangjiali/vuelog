@@ -102,4 +102,113 @@ TOTP机密引擎也可以充当TOTP提供者。在这种模式下，它可以用
     
     ```
 
+
+## 例子
+### 创建钥匙
+```
+命令
+vault write 家族钥匙/keys/jiangjiali generate=true issuer=家族钥匙 account_name=蒋佳李 algorithm=SHA512 period=30 key_size=1024 digits=8 qr_size=500
+
+vault write 家族钥匙/keys/jiangjiali \
+    generate=true \
+    issuer=家族钥匙 \
+    account_name=蒋佳李 \
+    algorithm=SHA512 \
+    period=30 \
+    key_size=1024 \
+    digits=8 \
+    qr_size=500
+
+POST请求
+$ curl \
+    --header "X-Vault-Token: ..." \
+    --request POST \
+    --data @数据.json \
+    https://vault.jiangjiail.com/v1/家族钥匙/keys/jiangjiali
+
+数据
+{
+  "generate": true,
+  "issuer": "家族钥匙",
+  "account_name": "蒋佳李",
+  "algorithm": "SHA512",
+  "period": 30,
+  "key_size": 1024,
+  "digits": 8,
+  "qr_size": 500
+}
+
+返回
+<img src="data:image/png;base64,图片数据" />
+
+```
+
+### 查询钥匙
+```
+命令
+vault get 家族钥匙/keys/jiangjiali
+
+GET请求
+$ curl \
+    --header "X-Vault-Token: ..." \
+    https://vault.jiangjiail.com/v1/家族钥匙/keys/jiangjiali
+
+```
+
+### 删除钥匙
+```
+命令
+vault delete 家族钥匙/keys/jiangjiali
+
+DELETE请求
+$ curl \
+    --header "X-Vault-Token: ..." \
+    --request DELETE \
+    https://vault.jiangjiail.com/v1/家族钥匙/keys/jiangjiali
+```
+
+### 钥匙列表
+```
+命令
+vault list 家族钥匙/keys
+
+LIST请求
+$ curl \
+    --header "X-Vault-Token: ..." \
+    --request LIST \
+    https://vault.jiangjiail.com/v1/家族钥匙/keys
+```
+
+### 获得一个钥匙
+```
+命令
+vault read 家族钥匙/code/jiangjiali
+
+GET请求
+$ curl \
+    --header "X-Vault-Token: ..." \
+    https://vault.jiangjiail.com/v1/家族钥匙/code/jiangjiali
+```
+
+### 认证钥匙
+```
+命令
+vault write 家族钥匙/code/jiangjiali code=25716774
+
+vault write 家族钥匙/code/jiangjiali \
+    code=25716774
+
+POST请求
+$ curl \
+    --header "X-Vault-Token: ..." \
+    --request POST \
+    --data @数据.json \
+    https://vault.jiangjiail.com/v1/家族钥匙/code/jiangjiali
+
+数据
+{
+  "code": "123802"
+}
+```
+
 <!-- zh-CN:- -->

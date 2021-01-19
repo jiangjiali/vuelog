@@ -28,7 +28,13 @@ const categories = [
     title: '家族管理',
     summary: '所有权与经营权合一的一种管理模式。',
     slug: 'familymanagement'
+  },
+  {
+    title: '数据分析',
+    summary: '所有权与经营权合一的一种管理模式。',
+    slug: 'data-analysis'
   }
+
 ]
 
 export default categories
