@@ -69,6 +69,16 @@ const soundDesign = [
     commentless: false,
     draft: false
   },
+  {
+    title: 'LAME使用',
+    slug: 'LAME使用',
+    category: 'sound-design',
+    summary: 'LAME 格式转换工具详细解说。',
+    date: '2021-01-27',
+    titleless: false,
+    commentless: false,
+    draft: false
+  },
 
 ]
 
