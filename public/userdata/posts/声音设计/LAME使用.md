@@ -1,6 +1,8 @@
 title: 混响的运用
 ------------------------------------
 <!-- zh-CN:+ -->
+[LAME 3.100 64位版 下载](userdata/media/lame-3.100.zip)
+
 ## 中文
 ```
 用法：lame.exe [options] <infile> [outfile]
