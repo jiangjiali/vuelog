@@ -1,0 +1,18 @@
+{
+	"name": "蒋佳李",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"description": "蒋佳李",
+	"version": "1.0",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_title": "蒋佳李"
+	},
+	"background": {
+		"persistent": true,
+		"scripts": ["background.js"]
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"offline_enabled": true,
+	"permissions": ["tabs", "storage", "http://*/", "https://*/"],
+	"web_accessible_resources": ["*"]
+}
