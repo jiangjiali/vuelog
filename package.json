@@ -4,7 +4,7 @@
   "description": "博客系统",
   "author": "蒋佳李",
   "license": "MIT",
-  "icp": "©2021 蒋佳李 粤ICP备19026698号-1",
+  "icp": "©2021 蒋佳李 粤ICP备19026698号",
   "icpweb": "https://beian.miit.gov.cn",
   "scripts": {
     "serve": "vue-cli-service serve",
